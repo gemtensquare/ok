@@ -22,8 +22,8 @@ jobs:
       # - name: 📁 Check project files
       #   run: ./scripts/list_project_files.sh
 
-      - name: 🚀 Remove Docker containers + volumes
-        run: docker-compose down -v
+      # - name: 🚀 Remove Docker containers + volumes
+      #   run: docker compose down -v
 
       - name: 🚀 Start Docker containers
         run: docker compose up -d
