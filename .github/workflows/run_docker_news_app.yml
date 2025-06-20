@@ -5,6 +5,9 @@ on:
     branches: [ vm ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   run-docker-news-app:
     runs-on: ubuntu-latest

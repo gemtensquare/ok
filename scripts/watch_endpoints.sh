@@ -75,11 +75,11 @@ while true; do
     # echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
   fi
 
-  if (( i % 12 == 0 )); then
+  if (( i % 12 )); then
     # pull changes
     echo -e "\033[1;33m📡 Pulling changes from GitHub...\033[0m"
     # git reset --hard 
-    # git pull origin main
+    git pull origin main
 
     # backup database
     echo -e "\033[1;36m⚙️ Running database backup script: backup_GemtenAi_db.sh...\033[0m"
@@ -87,7 +87,7 @@ while true; do
 
     # backup server logs
     echo -e "\033[1;36m⚙️ Running server logs backup script: save_server_logs.sh.sh...\033[0m"
-    sh ./scripts/save_server_logs.sh.sh
+    sh ./scripts/save_server_logs.sh
 
     # Set timezone to UTC+6 (Dhaka)
     
@@ -116,10 +116,15 @@ while true; do
     # pull changes
     echo -e "\033[1;33m📡 Pulling changes from GitHub...\033[0m"
     # git reset --hard 
-    # git pull origin main
+    git pull origin main
 
     echo -e "\033[1;36m⚙️ Running database backup script: backup_GemtenAi_db.sh...\033[0m"
     sh ./scripts/backup_GemtenAi_db.sh
+
+    # backup server logs
+    echo -e "\033[1;36m⚙️ Running server logs backup script: save_server_logs.sh.sh...\033[0m"
+    sh ./scripts/save_server_logs.sh
+
 
     # Set timezone to UTC+6 (Dhaka)
     export TZ="Asia/Dhaka"
