@@ -19,7 +19,7 @@ from Helper.helpers import Helper, TemplateHelper, GemtenPostHelper
 
 class TestApiView(APIView):
     def get(self, request):
-        data = []
+        data = [1]
 
 
         # pages = GemtenPage.objects.all()
@@ -29,10 +29,10 @@ class TestApiView(APIView):
         #     cache.set(page_id, [2855], timeout=None)
         #     print(page_name, page_id, cache.get(page_id, []))
         
-        GemtenPostHelper.process_and_publish_news_to_all_pages()
+        # GemtenPostHelper.process_and_publish_news_to_all_pages()
 
 
-        # data += Scraping.scrape_all_jugantor_news()
+        data += Scraping.scrape_all_shikshabarta_news()
         # cache.set(constants.GEMTEN_NEWS_PAGE_ID, [2478, 2479], timeout=None)
 
         # data += Scraping.scrape_all_jugantor_news()

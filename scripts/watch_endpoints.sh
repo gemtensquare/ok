@@ -103,7 +103,7 @@ while true; do
     # Commit changes
     echo -e "\033[1;33m💾 Creating commit...\033[0m"
     git add .
-    git commit -m "Backup database at $NOW" || echo -e "\033[1;90m⚠️ No changes to commit\033[0m"
+    git commit -m "Backup at $NOW" || echo -e "\033[1;90m⚠️ No changes to commit\033[0m"
 
     # Push changes using PAT token
     echo -e "\033[1;35m🚀 Pushing changes to GitHub...\033[0m"
@@ -112,7 +112,7 @@ while true; do
     echo -e "\033[1;31m❌ Push failed! Please check your token and permissions.\033[0m"
   fi
 
-  if (( i == 72 )); then
+  if (( i == 70 )); then
     # pull changes
     echo -e "\033[1;33m📡 Pulling changes from GitHub...\033[0m"
     # git reset --hard 
@@ -140,7 +140,7 @@ while true; do
     # Commit changes
     echo -e "\033[1;33m💾 Creating commit...\033[0m"
     git add .
-    git commit -m "Backup database at $NOW" || echo -e "\033[1;90m⚠️ No changes to commit\033[0m"
+    git commit -m "Backup at $NOW" || echo -e "\033[1;90m⚠️ No changes to commit\033[0m"
 
     # Push changes using PAT token
     echo -e "\033[1;35m🚀 Pushing changes to GitHub...\033[0m"

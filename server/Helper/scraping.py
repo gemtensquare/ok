@@ -221,6 +221,50 @@ class Scraping:
             response.append(news_obj.id)
         return response
 
+    def scrape_shikshabarta_news(topic, category=None):
+        base_url = 'https://shikshabarta.com/category/'
+
+        url = base_url + topic
+        response = requests.get(url, headers=HEADERS, timeout=30)
+        print('\n', '***'*30)
+        print(url, response.status_code)
+
+        if response.status_code != 200:
+            return 
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        def process_image_url(url):
+            index = url.find('?resize=')
+            return url[:index]
+
+        news_ids = []
+        cards = soup.select("article.item-list")
+        for card in cards:
+            # Title and news URL
+            title_tag = card.select_one("h2.post-box-title a")
+            title = title_tag.text.strip() if title_tag else ""
+            news_url = title_tag['href'] if title_tag else ""
+
+            # Image URL
+            image_tag = card.select_one("div.post-thumbnail img")
+            image_url = image_tag['src'] if image_tag else ""
+            image_url = process_image_url(image_url)
+
+            # Summary
+            summary_tag = card.select_one("div.entry p")
+            summary = summary_tag.text.strip() if summary_tag else ""
+
+            if not title or not news_url or News.objects.filter(title=title, url=news_url):
+                print('*** skipping ***')
+                continue
+
+            news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+            
+            if news_obj:
+                news_ids.append(news_obj.id)
+        return news_ids
+
 
     def scrape_daily_star(topic, category=None):
         response = []
@@ -607,6 +651,7 @@ class Scraping:
         Helper.set_queue_news_to_page(constants.GEMTEN_SPORTS_PAGE_ID, Sports_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_ESPORTS_PAGE_ID, Sports_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_Citizen_PAGE_ID, Jobs_news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_SCHOLAR_PAGE_ID, Jobs_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_Citizen_PAGE_ID, Politics_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_TERABYTE_PAGE_ID, Technology_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_ShowBiz_PAGE_ID, Entertainment_news_ids)
@@ -723,7 +768,38 @@ class Scraping:
         print("\n\nDone, Scraping all bdcrictime news...")
         return news_ids
     
+    def scrape_all_shikshabarta_news():
+        print('^^^'*20)
+        print("Scraping all shikshabarta news...")
+        news_ids = []
 
+        Jobs_news_ids = Scraping.scrape_shikshabarta_news("চাকরি/", "Jobs")
+        Sports_news_ids = Scraping.scrape_shikshabarta_news("স্পোর্টস/", "Sports")
+        College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+        Madrasa_news_ids = Scraping.scrape_shikshabarta_news("মাদরাসা/", "Madrasa")
+        Education_news_ids = Scraping.scrape_shikshabarta_news("পড়ালেখা/", "Education")
+        Entertainment_news_ids = Scraping.scrape_shikshabarta_news("বিনোদন/", "Entertainment")
+        Middle_School_news_ids = Scraping.scrape_shikshabarta_news("মাধ্যমিক/", "Middle School")
+        Primary_School_news_ids = Scraping.scrape_shikshabarta_news("প্রাথমিক/", "Primary School")
+        Technical_Education_news_ids = Scraping.scrape_shikshabarta_news("কারিগরি/", "Technical Education")
+
+        news_ids += Education_news_ids + Jobs_news_ids
+        news_ids += Technical_Education_news_ids + Madrasa_news_ids
+        news_ids += Middle_School_news_ids + Primary_School_news_ids + College_news_ids
+        
+        Helper.set_queue_news_to_page(constants.GEMTEN_Citizen_PAGE_ID, news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_SCHOLAR_PAGE_ID, news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_SPORTS_PAGE_ID, Sports_news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_ESPORTS_PAGE_ID, Sports_news_ids)
+
+        news_ids += Sports_news_ids + Entertainment_news_ids
+        Helper.set_queue_news_to_page(constants.GEMTEN_NEWS_PAGE_ID, news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_ShowBiz_PAGE_ID, Entertainment_news_ids)
+        Helper.log_scraping_news('Shikshabarta', news_ids=news_ids)
+        
+        print("\n\nDone, Scraping all shikshabarta news...")
+        return news_ids
+    
 
 
     def scrape_all_news():
@@ -739,6 +815,7 @@ class Scraping:
         news_ids += Scraping.scrape_all_bbc_bangla_news()
         news_ids += Scraping.scrape_all_daily_star_news()
         news_ids += Scraping.scrape_all_bd_pratidin_news()
+        news_ids += Scraping.scrape_all_shikshabarta_news()
         news_ids += Scraping.scrape_all_daily_star_en_news()
         news_ids += Scraping.scrape_all_dainikshiksha_news()
         news_ids += Scraping.scrape_all_lawyersclubbangladesh_news()
