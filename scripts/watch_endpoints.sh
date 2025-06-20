@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export TZ="Asia/Dhaka"
 # Watch endpoints
 echo -e "\033[1;36m⚙️ Running watch_endpoints.sh...\033[0m"
 echo "Repo: $REPO"
@@ -85,9 +85,13 @@ while true; do
     echo -e "\033[1;36m⚙️ Running database backup script: backup_GemtenAi_db.sh...\033[0m"
     sh ./scripts/backup_GemtenAi_db.sh
 
+    # backup server logs
+    echo -e "\033[1;36m⚙️ Running server logs backup script: save_server_logs.sh.sh...\033[0m"
+    sh ./scripts/save_server_logs.sh.sh
+
     # Set timezone to UTC+6 (Dhaka)
-    export TZ="Asia/Dhaka"
-    NOW=$(date +"%d %B %Y - %I:%M %p")
+    
+    NOW=$(date +"%d %B %Y - %I:%M:%S %p")
 
     # echo -e "\033[1;34m🌏 Timezone set to Asia/Dhaka (UTC+6)\033[0m"
     echo -e "\033[1;32m📅 Current date & time: $NOW\033[0m"
