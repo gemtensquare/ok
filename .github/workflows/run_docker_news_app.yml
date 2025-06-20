@@ -26,7 +26,7 @@ jobs:
       #   run: docker compose down -v
 
       - name: 🚀 Start Docker containers
-        run: docker compose up
+        run: docker compose up -d
 
       # - name: 🔍 Show all containers
       #   run: docker ps -a
