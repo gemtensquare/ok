@@ -1,0 +1,51 @@
+CRON_LOG_FILE = '/logs/cron_log.txt'
+
+NEWS_CRON_LOG_FILE = '/logs/news_scraping_log.txt'
+NEWS_POSTED_LOG_FILE = '/logs/news_posted_log.txt'
+
+
+GEMTEN_NEWS_PAGE_ID = '571480596045760'
+GEMTEN_SPORTS_PAGE_ID = '692806730579545'
+GEMTEN_CRICKET_PAGE_ID = '463298220210795'
+GEMTEN_ESPORTS_PAGE_ID = '460605427136929'
+GEMTEN_FOOTBALL_PAGE_ID = '684520311406135' 
+GEMTEN_ShowBiz_PAGE_ID = '680263785168283' 
+GEMTEN_TERABYTE_PAGE_ID = '644657182073016' 
+GEMTEN_SCHOLAR_PAGE_ID = '108818517606899' 
+GEMTEN_TradeBeat_PAGE_ID = '108818517606899'
+GEMTEN_Quantum_PAGE_ID = '61577161163086' 
+GEMTEN_PetVerse_PAGE_ID = '653488074514664' 
+GEMTEN_Citizen_PAGE_ID = '648557078333675' 
+
+
+GEMTEN_PAGES = {
+    'Gemten_News': GEMTEN_NEWS_PAGE_ID,
+    'Gemten_Sports': GEMTEN_SPORTS_PAGE_ID,
+    'Gemten_Esports': GEMTEN_ESPORTS_PAGE_ID,
+    'Gemten_Cricket': GEMTEN_CRICKET_PAGE_ID,
+    'Gemten_Football': GEMTEN_FOOTBALL_PAGE_ID,
+    'Gemten_ShowBiz': GEMTEN_ShowBiz_PAGE_ID,
+    'Gemten_Terabyte': GEMTEN_TERABYTE_PAGE_ID,
+    'Gemten_Scholar': GEMTEN_SCHOLAR_PAGE_ID,
+    'Gemten_TradeBeat': GEMTEN_TradeBeat_PAGE_ID,
+    'Gemten_Quantum': GEMTEN_Quantum_PAGE_ID,
+    'Gemten_PetVerse': GEMTEN_PetVerse_PAGE_ID,
+    'Gemten_Citizen': GEMTEN_Citizen_PAGE_ID,
+}
+
+
+
+
+
+
+
+
+
+POST_HASHTAGS_CURRENT = """
+
+#Gemten_#GemtenNews #NewsUpdate #24x7News #DailyBulletin #TopHeadlines
+"""
+
+POST_HASHTAGS = """
+"""
+
