@@ -112,7 +112,7 @@ while true; do
     echo -e "\033[1;31m❌ Push failed! Please check your token and permissions.\033[0m"
   fi
 
-  if (( i == 1 )); then
+  if (( i == 72 )); then
     # pull changes
     echo -e "\033[1;33m📡 Pulling changes from GitHub...\033[0m"
     # git reset --hard 
