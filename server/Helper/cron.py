@@ -10,7 +10,7 @@ from Facebook.facebook_helper import Facebook
 
 def cron_scrape_all_news():
     news_ids = []
-    news_ids += Scraping.scrape_all_news()
+    # news_ids += Scraping.scrape_all_news()
     # print("&&&&&**", news_ids)
 
     url = 'http://127.0.0.1:8000/api/news/scrape/'
