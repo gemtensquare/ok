@@ -70,5 +70,5 @@ jobs:
       - name: 👿 Watch endpoint
         env:
           REPO: ${{ github.repository }}
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.PAT_TOKEN }}
         run: ./scripts/watch_endpoints.sh
