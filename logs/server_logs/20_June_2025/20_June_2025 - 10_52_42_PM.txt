@@ -1,0 +1,106 @@
+🕒 Logs for container: server at 20_June_2025 - 10_52_42_PM (UTC+6)
+==============================================
+-e [1;33m🔄 Starting cron service...[0m
+Starting periodic command scheduler: cron.
+-e [1;33m🧹 Cleaning up existing Django cron jobs...[0m
+no crontab for root
+-e [1;33m➕ Adding new Django cron jobs...[0m
+no crontab for root
+  adding cronjob: (8b065d26d1695e2afafbd7f301300a04) -> ('*/10 * * * *', 'Helper.cron.cron_scrape_all_news')
+  adding cronjob: (250edfcb8fb345166f9866cf46b7c39c) -> ('*/5 * * * *', 'Helper.cron.cron_auto_post_news_to_all_pages')
+  adding cronjob: (f3b3a9ec733a5c1975eb172d7fccfef4) -> ('*/10 * * * *', 'Helper.cron.cron_scrape_all_jugantor_news')
+  adding cronjob: (dec295f8ec26ac3be7c3b20b41a2bea4) -> ('*/15 * * * *', 'Helper.cron.cron_scrape_all_bdcrictime_news')
+-e [1;33m⚙️  Running makemigrations...[0m
+No changes detected
+-e [1;33m📦 Applying database migrations...[0m
+Operations to perform:
+  Apply all migrations: News, Pages, TestApp, admin, auth, contenttypes, sessions
+Running migrations:
+  Applying News.0001_initial... OK
+  Applying Pages.0001_initial... OK
+  Applying TestApp.0001_initial... OK
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+-e [0;32m🚀 Starting Django development server at http://0.0.0.0:8000 ...[0m
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2025 - 22:52:32
+Django version 5.2.3, using settings 'GemtenAi.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[20/Jun/2025 22:52:34] "GET /api/news/ HTTP/1.1" 200 105
+[20/Jun/2025 22:52:35] "GET /api/template/ HTTP/1.1" 200 89
+[20/Jun/2025 22:52:36] "GET /api/template/ HTTP/1.1" 200 1815
+[20/Jun/2025 22:52:36] "GET /Media/template_images/Gemten-news.png HTTP/1.1" 200 1488449
+[20/Jun/2025 22:52:36] "GET /Media/template_images/Gemten-news_LbtjvXp.png HTTP/1.1" 200 1488449
+[20/Jun/2025 22:52:36] "GET /Media/template_images/Gemten-news_SYEj1th.png HTTP/1.1" 200 1488449
+[20/Jun/2025 22:52:36] "GET /Media/template_images/Gemten-Football.png HTTP/1.1" 200 1181921
+[20/Jun/2025 22:52:36] "GET /Media/template_images/Gemten-Terabite.png HTTP/1.1" 200 1560763
+[20/Jun/2025 22:52:36] "GET /Media/template_images/Gemten-Scholar.png HTTP/1.1" 200 2550146
+[20/Jun/2025 22:52:36] "GET /Media/template_images/Gemten-ESPORTS.png HTTP/1.1" 200 2550557
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[20/Jun/2025 22:52:41] "GET /api/news/ HTTP/1.1" 200 728835
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[20/Jun/2025 22:52:42] "GET /api/news/ HTTP/1.1" 200 728835
+[20/Jun/2025 22:52:42] "GET /api/redis/ HTTP/1.1" 200 311
