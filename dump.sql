@@ -1567,6 +1567,8 @@ COPY public."News_news" (id, intro, title, url, image_url, source, image, type, 
 1129	নিজস্ব প্রতিবেদক, ঢাকাঃ পবিত্র ঈদ-উল-আযহা উপলক্ষে ছুটিকালীন সময়ে কারিগরি শিক্ষা অধিদপ্তর ও অধিদপ্তরাধীন সকল প্রতিষ্ঠানের ভবন/ওয়ার্কশপ/ল্যাবরেটরি ও অন্যান্য স্থাপনার সার্বক্ষণিক নিরাপত্তা ব্যবস্থা জোরদারকরণ এবং ছুটিকালীন দায়িত্ব পালনের রোস্টার প্রস্তুত করার নির্দেশ দিয়েছে কারিগরি শিক্ষা অধিদপ্তর।  বৃহস্পতিবার (২২ মে) অধিদপ্তরের পরিচালক (প্রশাসন) প্রকৌ. মোঃ জয়নাল আবেদীন স্বাক্ষরিত চিঠিতে এই নির্দেশনা দেওয়া …	ঈদের ছুটিতে শিক্ষা প্রতিষ্ঠানের নিরাপত্তায় দায়িত্ব পালনের রোস্টার প্রস্তুতের নির্দেশ	https://shikshabarta.com/221580/	https://i0.wp.com/shikshabarta.com/wp-content/uploads/2024/12/Directorate-of-technical-education.jpg	shikshabarta.com	news_images/1750454449_2206.jpg	bn	Technical Education	t	{"template1": "edited_images/1750454449_2206_template1.jpg", "template6": "edited_images/1750454449_2206_template6.jpg"}	2025-06-20 21:20:49.576656+00	2025-06-20 22:31:45.868443+00
 1140	On May 19, mountaineer Ikramul Hasan Shakil stood just metres away from achieving his lifelong dream -- reaching the summit of Mount Everest.	From sea to summit	https://www.thedailystar.net//news/bangladesh/news/sea-summit-3922011	https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/media/api_images/2025/06/21/Everest_3.jpg	thedailystar.net	news_images/1750458637_26472.jpg	en	Bangladesh	t	{"template1": "edited_images/1750458637_26472_template1.jpg"}	2025-06-20 22:30:37.686531+00	2025-06-20 22:41:06.478797+00
 1141	For the past two weeks, Siddiqur Rahman, a resident of Shantibagh in Dhaka, has been receiving water from Dhaka Wasa infested with insects and accompanied by a strong stench.	Wasa water stinks	https://www.thedailystar.net//news/bangladesh/news/wasa-water-stinks-3922006	https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/default_fallback.jpg	thedailystar.net	news_images/1750458637_33384.jpg	en	Bangladesh	t	{"template1": "edited_images/1750458637_33384_template1.jpg"}	2025-06-20 22:30:37.705854+00	2025-06-20 22:41:14.907545+00
+1143		ইসরায়েলে কেন অনেক ভারতীয়, কী করেন তারা	https://www.bbc.com/bengali/articles/czjk749p1eko	https://ichef.bbci.co.uk/ace/ws/999/cpsprodpb/9a06/live/08b843d0-4dd2-11f0-a466-d54f65b60deb.jpg	bbc.com	news_images/1750470605_47676.jpg	bn	World	t	{"template1": "edited_images/1750470605_47676_template1.jpg"}	2025-06-21 01:50:05.993789+00	2025-06-21 01:55:02.939915+00
+1144		একনজরে আজকের বাংলাদেশ প্রতিদিন (২১ জুন)	https://www.bd-pratidin.com/national/2025/06/21/1128344	https://cdn.bd-pratidin.com/public/news_images/2025/06/21/1750447624-4a3ecda57c241ea9759a3d4ad994db82.PNG	bd-pratidin.com	news_images/1750471242_68634.jpg	bn	National	t	{"template1": "edited_images/1750471242_68634_template1.jpg"}	2025-06-21 02:00:42.454058+00	2025-06-21 02:05:03.000228+00
 \.
 
 
@@ -1769,7 +1771,7 @@ q44nlaox6gzi6kd6ghdfzrebx7r8pe00	.eJxVjEEOwiAQRe_C2pDCMLR16d4zEIYZbNVAUtqV8e7apA
 -- Name: News_news_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."News_news_id_seq"', 1142, true);
+SELECT pg_catalog.setval('public."News_news_id_seq"', 1144, true);
 
 
 --
