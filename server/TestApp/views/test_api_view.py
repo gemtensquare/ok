@@ -32,7 +32,7 @@ class TestApiView(APIView):
         # GemtenPostHelper.process_and_publish_news_to_all_pages()
 
 
-        data += Scraping.scrape_all_shikshabarta_news()
+        data += Scraping._scrape_all_ew_en_news()
         # cache.set(constants.GEMTEN_NEWS_PAGE_ID, [2478, 2479], timeout=None)
 
         # data += Scraping.scrape_all_jugantor_news()

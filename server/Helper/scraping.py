@@ -64,7 +64,7 @@ class Scraping:
             image_url = img_tag['src']
 
             if not title or not news_url or News.objects.filter(title=title, url=news_url):
-                print('*** skipping ***')
+                # print('*** skipping ***')
                 continue
 
             image_response = requests.get(image_url)
@@ -111,7 +111,7 @@ class Scraping:
             image_url =  Helper.process_jugantor_image_url(img_tag['data-src'])
 
             if not title or not news_url or News.objects.filter(title=title, url=news_url):
-                print('*** skipping ***')
+                # print('*** skipping ***')
                 continue
 
             image_response = requests.get(image_url)
@@ -156,7 +156,7 @@ class Scraping:
             image_url =  Helper.process_bd_protidin_image_url(img_tag['src'])
 
             if not title or not news_url or News.objects.filter(title=title, url=news_url):
-                print('*** skipping ***')
+                # print('*** skipping ***')
                 continue
 
             image_response = requests.get(image_url)
@@ -201,7 +201,7 @@ class Scraping:
             image_url = Helper.process_bbc_news_image_url(img['src'])
 
             if not title or not news_url or News.objects.filter(title=title, url=news_url):
-                print('*** skipping ***')
+                # print('*** skipping ***')
                 continue
 
             image_response = requests.get(image_url)
@@ -256,7 +256,7 @@ class Scraping:
             summary = summary_tag.text.strip() if summary_tag else ""
 
             if not title or not news_url or News.objects.filter(title=title, url=news_url):
-                print('*** skipping ***')
+                # print('*** skipping ***')
                 continue
 
             news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
@@ -265,6 +265,57 @@ class Scraping:
                 news_ids.append(news_obj.id)
         return news_ids
 
+    def scrape_ew_en_news(topic, category=None):
+        base_url = 'https://ew.com/'
+        url = base_url + topic + '/'
+
+        print('\n', '***' * 30)
+        print("Main Page:", url)
+
+        response = requests.get(url, headers=HEADERS, timeout=30)
+        if response.status_code != 200:
+            print("Failed to fetch main page.")
+            return
+
+        soup = BeautifulSoup(response.text, 'html.parser')
+        cards = soup.select("a.mntl-card.card.card--no-image")
+
+        def get_main_image_from_article(article_url):
+            try:
+                response = requests.get(article_url, headers=HEADERS, timeout=30)
+                if response.status_code != 200:
+                    return ""
+                soup = BeautifulSoup(response.text, 'html.parser')
+                image_tag = soup.select_one("img.primary-image__image")
+                if image_tag:
+                    return image_tag.get("src", "")
+            except Exception as e:
+                print(f"Failed to fetch article {article_url}:", e)
+            return None
+        
+        news_ids = []
+        for card in cards:
+            # Title and URL
+            title_tag = card.select_one(".card__title-text")
+            title = title_tag.text.strip() if title_tag else ""
+            news_url = card.get("href", "")
+
+            if not title or not news_url or News.objects.filter(title=title, url=news_url):
+                print('*** skipping ***')
+                continue
+
+            # Visit the news URL and get the main image from the article page
+            image_url = get_main_image_from_article(news_url)
+            if not image_url:
+                print('*** skipping for image ***')
+                continue
+
+
+            news_obj = Scraping.save_news(title, title, category, news_url, image_url, source="ew.com", type="en")
+            if news_obj:
+                news_ids.append(news_obj.id)
+
+        return news_ids
 
     def scrape_daily_star(topic, category=None):
         response = []
@@ -293,7 +344,7 @@ class Scraping:
                         intro = intro_tag.text.strip() if intro_tag else ''
 
                         if not image_url or not title or not news_url or News.objects.filter(title=title, url=news_url):
-                            print('*** skipping ***')
+                            # print('*** skipping ***')
                             continue
 
                         news_obj = Scraping.save_news(title, intro, category, news_url, image_url, source="bangla.thedailystar.net")
@@ -326,7 +377,7 @@ class Scraping:
                 image_url = process_image_url(news.get('thumbnail', ''))
 
                 if not title or not news_url or News.objects.filter(title=title, url=news_url):
-                    print('*** skipping ***')
+                    # print('*** skipping ***')
                     continue
                 
                 news_obj = Scraping.save_news(title, title, category, news_url, image_url, source="dainikshiksha.com")
@@ -353,7 +404,7 @@ class Scraping:
                         title = card.select_one('a').text.strip()
                         news_url = base_url + card.select_one('a')['href']
                         if not title or not news_url or News.objects.filter(title=title, url=news_url):
-                            print('*** skipping ***')
+                            # print('*** skipping ***')
                             continue
 
                         intro = card.select_one('.intro').text.strip() if card.select_one('.intro') else ''
@@ -398,7 +449,7 @@ class Scraping:
                         image_url = Helper.process_jagonews24_news_image_url(raw_image_url)
 
                         if not image_url or not title or not news_url or News.objects.filter(title=title, url=news_url):
-                            print('*** skipping ***')
+                            # print('*** skipping ***')
                             continue
 
                         news_obj = Scraping.save_news(title, title, category, news_url, image_url, source="jagonews24.com")
@@ -419,6 +470,7 @@ class Scraping:
         url = base_url + topic
         try:
             res = requests.get(url, headers=HEADERS, timeout=30)
+            print(url, res.status_code)
             if res.status_code == 200:
                 soup = BeautifulSoup(res.text, 'html.parser')
 
@@ -436,7 +488,7 @@ class Scraping:
                         image_url = raw_image_url
 
                         if not image_url or not title or not news_url or News.objects.filter(title=title, url=news_url):
-                            print('*** skipping ***')
+                            # print('*** skipping ***')
                             continue
 
                         news_obj = Scraping.save_news(title, title, category, news_url, image_url, source="bdcrictime.com")
@@ -495,7 +547,7 @@ class Scraping:
             image_url = process_image_url(img_tag['src']) if img_tag else ""
 
             if not image_url or not title or not news_url or News.objects.filter(title=title, url=news_url):
-                print('*** skipping ***')
+                # print('*** skipping ***')
                 continue
 
             news_obj = Scraping.save_news(title, intro, "Pets", news_url, image_url, source="bbc.com", type="en")
@@ -537,7 +589,7 @@ class Scraping:
             image_url = process_image_url(image_url)
 
             if not image_url or not title or not news_url or News.objects.filter(title=title, url=news_url):
-                print('*** skipping ***')
+                # print('*** skipping ***')
                 continue
 
             news_obj = Scraping.save_news(title, title, category, news_url, image_url, source="lawyersclubbangladesh.com")
@@ -610,19 +662,19 @@ class Scraping:
 
         return news_ids
 
-    def scrape_all_lawyersclubbangladesh_news():
+    def _scrape_all_ew_en_news():
         print('^^^'*20)
-        print("Scraping all lawyersclubbangladesh news...")
+        print("Scraping all ew news...")
         news_ids = []
-        news_ids += Scraping.scrape_lawyersclubbangladesh("জাতীয়/", "National")
-        news_ids += Scraping.scrape_lawyersclubbangladesh("পড়াশোনা/", "Education")
-        news_ids += Scraping.scrape_lawyersclubbangladesh("বিশেষ-সংবাদ/", "Special News")
-        news_ids += Scraping.scrape_lawyersclubbangladesh("আদালত-প্রাঙ্গণ/", "Courthouse")
-        news_ids += Scraping.scrape_lawyersclubbangladesh("দৈনন্দিন-জীবনে-আইন/", "Daily Law")
-        news_ids += Scraping.scrape_lawyersclubbangladesh("সংসদ-ও-মন্ত্রী-সভা/", "Parliament and Cabinet")
+        news_ids += Scraping.scrape_ew_en_news('books', 'Books')
+        # Scraping.scrape_ew_en_news('binge', 'Entertainment')
+        news_ids += Scraping.scrape_ew_en_news('music', 'Entertainment')
+        news_ids += Scraping.scrape_ew_en_news('movies', 'Entertainment')
+        news_ids += Scraping.scrape_ew_en_news('celebrity', 'Celebrities')
         
-        Helper.log_scraping_news('Lawer Club Bangladesh', news_ids=news_ids)
-        Helper.set_queue_news_to_page(constants.GEMTEN_Citizen_PAGE_ID, news_ids)
+        Helper.log_scraping_news('EW', news_ids=news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_NEWS_PAGE_ID, news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_ShowBiz_PAGE_ID, news_ids)
         
         return news_ids
     
@@ -809,6 +861,7 @@ class Scraping:
         news_ids += Scraping.scrape_all_pets_news()
         news_ids += Scraping.scrape_all_khela_news()
         # news_ids += Scraping.scrape_all_jugantor_news()
+        news_ids += Scraping._scrape_all_ew_en_news()
         news_ids += Scraping.scrape_all_bdcrictime_news()
         news_ids += Scraping.scrape_all_bdcrictime_news()
         news_ids += Scraping.scrape_all_jagonews24_news()
