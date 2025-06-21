@@ -1,0 +1,6732 @@
+🕒 Logs for container: server at 21_June_2025 - 09_59_35_AM (UTC+6)
+==============================================
+-e [1;33m🔄 Starting cron service...[0m
+Starting periodic command scheduler: cron.
+-e [1;33m🧹 Cleaning up existing Django cron jobs...[0m
+no crontab for root
+-e [1;33m➕ Adding new Django cron jobs...[0m
+no crontab for root
+  adding cronjob: (8b065d26d1695e2afafbd7f301300a04) -> ('*/10 * * * *', 'Helper.cron.cron_scrape_all_news')
+  adding cronjob: (250edfcb8fb345166f9866cf46b7c39c) -> ('*/5 * * * *', 'Helper.cron.cron_auto_post_news_to_all_pages')
+  adding cronjob: (f3b3a9ec733a5c1975eb172d7fccfef4) -> ('*/10 * * * *', 'Helper.cron.cron_scrape_all_jugantor_news')
+  adding cronjob: (dec295f8ec26ac3be7c3b20b41a2bea4) -> ('*/15 * * * *', 'Helper.cron.cron_scrape_all_bdcrictime_news')
+-e [1;33m⚙️  Running makemigrations...[0m
+No changes detected
+-e [1;33m📦 Applying database migrations...[0m
+Operations to perform:
+  Apply all migrations: News, Pages, TestApp, admin, auth, contenttypes, sessions
+Running migrations:
+  Applying News.0001_initial... OK
+  Applying Pages.0001_initial... OK
+  Applying TestApp.0001_initial... OK
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+-e [0;32m🚀 Starting Django development server at http://0.0.0.0:8000 ...[0m
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 21, 2025 - 09:04:17
+Django version 5.2.3, using settings 'GemtenAi.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:04:17] "GET /api/news/ HTTP/1.1" 200 105
+[21/Jun/2025 09:04:19] "GET /api/template/ HTTP/1.1" 200 89
+[21/Jun/2025 09:04:20] "GET /api/template/ HTTP/1.1" 200 1815
+[21/Jun/2025 09:04:20] "GET /Media/template_images/Gemten-news.png HTTP/1.1" 200 1488449
+[21/Jun/2025 09:04:20] "GET /Media/template_images/Gemten-news_LbtjvXp.png HTTP/1.1" 200 1488449
+[21/Jun/2025 09:04:20] "GET /Media/template_images/Gemten-news_SYEj1th.png HTTP/1.1" 200 1488449
+[21/Jun/2025 09:04:20] "GET /Media/template_images/Gemten-Football.png HTTP/1.1" 200 1181921
+[21/Jun/2025 09:04:20] "GET /Media/template_images/Gemten-Terabite.png HTTP/1.1" 200 1560763
+[21/Jun/2025 09:04:20] "GET /Media/template_images/Gemten-Scholar.png HTTP/1.1" 200 2550146
+[21/Jun/2025 09:04:20] "GET /Media/template_images/Gemten-ESPORTS.png HTTP/1.1" 200 2550557
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:04:25] "GET /api/news/ HTTP/1.1" 200 938322
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:04:26] "GET /api/news/ HTTP/1.1" 200 938322
+[21/Jun/2025 09:04:26] "GET /api/redis/ HTTP/1.1" 200 311
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:05:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:09:27] "GET /api/news/ HTTP/1.1" 200 938322
+[21/Jun/2025 09:09:27] "GET /api/redis/ HTTP/1.1" 200 311
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:10:01] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+ ******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/cricket 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/football 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bbc bangla news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all daily star news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/science 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/national 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bd pratidin news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+ ******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all shikshabarta news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all dainikshiksha news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all news...
+[21/Jun/2025 09:10:51] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: [1147, 1148]
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: [1148]
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:14:28] "GET /api/news/ HTTP/1.1" 200 939447
+[21/Jun/2025 09:14:28] "GET /api/redis/ HTTP/1.1" 200 324
+
+***** 21 June, 2025 - 09:15:03 AM '1147 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133899954780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:15:11 AM '1147 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:15:12 AM '1148 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133900032780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:15:20 AM '1148 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:15:20 AM '1148 news id' Start Posting on ==> 'Gemten ShowBiz'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/680263785168283_122112074864894651
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:15:45 AM '1148 news id' End Posting on ==> 'Gemten ShowBiz'
+
+🐣 Just dropped 3 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:15:45] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:19:29] "GET /api/news/ HTTP/1.1" 200 939559
+[21/Jun/2025 09:19:29] "GET /api/redis/ HTTP/1.1" 200 311
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:20:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+ ******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/cricket 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/football 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bbc bangla news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all daily star news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/science 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/national 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bd pratidin news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+ ******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all shikshabarta news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all dainikshiksha news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all news...
+[21/Jun/2025 09:20:43] "GET /api/news/scrape/ HTTP/1.1" 200 120
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: [1152, 1153, 1154, 1149, 1150, 1151]
+Gemten_Sports Stored News Ids: [1149, 1150]
+Gemten_Esports Stored News Ids: [1149, 1150]
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: [1149]
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: [1152, 1153, 1154, 1151]
+Gemten_TradeBeat Stored News Ids: [1152, 1153, 1154, 1151]
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:24:29] "GET /api/news/ HTTP/1.1" 200 943814
+[21/Jun/2025 09:24:30] "GET /api/redis/ HTTP/1.1" 200 400
+
+***** 21 June, 2025 - 09:25:02 AM '1152 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133900698780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:25:14 AM '1152 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:25:14 AM '1153 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133900782780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:25:24 AM '1153 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:25:25 AM '1154 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133900902780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:25:33 AM '1154 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:25:34 AM '1149 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133901010780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:25:46 AM '1149 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:25:47 AM '1150 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133901148780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:26:11 AM '1150 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:26:11 AM '1149 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122099965736919449
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:26:20 AM '1149 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 21 June, 2025 - 09:26:20 AM '1150 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122099965820919449
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:26:27 AM '1150 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 21 June, 2025 - 09:26:27 AM '1149 news id' Start Posting on ==> 'Gemten Football'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/684520311406135_122110173134901991
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:26:45 AM '1149 news id' End Posting on ==> 'Gemten Football'
+
+
+***** 21 June, 2025 - 09:26:46 AM '1149 news id' Start Posting on ==> 'Gemten ESports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155030034589541
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:27:12 AM '1149 news id' End Posting on ==> 'Gemten ESports'
+
+
+***** 21 June, 2025 - 09:27:12 AM '1150 news id' Start Posting on ==> 'Gemten ESports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155030148589541
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:27:20 AM '1150 news id' End Posting on ==> 'Gemten ESports'
+
+
+***** 21 June, 2025 - 09:27:21 AM '1152 news id' Start Posting on ==> 'Gemten Scholar'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/108818517606899_1329786819151805
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:27:31 AM '1152 news id' End Posting on ==> 'Gemten Scholar'
+
+
+***** 21 June, 2025 - 09:27:31 AM '1153 news id' Start Posting on ==> 'Gemten Scholar'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/108818517606899_1329786935818460
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:27:41 AM '1153 news id' End Posting on ==> 'Gemten Scholar'
+
+
+***** 21 June, 2025 - 09:27:41 AM '1154 news id' Start Posting on ==> 'Gemten Scholar'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/108818517606899_1329787082485112
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:27:53 AM '1154 news id' End Posting on ==> 'Gemten Scholar'
+
+
+***** 21 June, 2025 - 09:27:54 AM '1151 news id' Start Posting on ==> 'Gemten Scholar'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/108818517606899_1329787259151761
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:28:09 AM '1151 news id' End Posting on ==> 'Gemten Scholar'
+
+🐣 Just dropped 14 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:28:09] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: [1151]
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:29:30] "GET /api/news/ HTTP/1.1" 200 944510
+[21/Jun/2025 09:29:30] "GET /api/redis/ HTTP/1.1" 200 315
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+***** 21 June, 2025 - 09:30:02 AM '1151 news id' Start Posting on ==> 'Gemten News'
+
+ ******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/cricket 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/football 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bbc bangla news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133901514780855
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:30:17 AM '1151 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 1 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:30:17] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all daily star news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/science 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/national 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/sports 404
+*** skipping for status code ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bd pratidin news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+ ******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all shikshabarta news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all dainikshiksha news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all news...
+[21/Jun/2025 09:30:45] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: [1155, 1156, 1157]
+Gemten_Sports Stored News Ids: [1157]
+Gemten_Esports Stored News Ids: [1157]
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:34:31] "GET /api/news/ HTTP/1.1" 200 946653
+[21/Jun/2025 09:34:31] "GET /api/redis/ HTTP/1.1" 200 333
+
+***** 21 June, 2025 - 09:35:02 AM '1155 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133902006780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:35:14 AM '1155 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:35:15 AM '1156 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133902084780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:35:28 AM '1156 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:35:29 AM '1157 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133902174780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:35:39 AM '1157 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:35:39 AM '1157 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122099969456919449
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:35:46 AM '1157 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 21 June, 2025 - 09:35:47 AM '1157 news id' Start Posting on ==> 'Gemten ESports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155031762589541
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:35:58 AM '1157 news id' End Posting on ==> 'Gemten ESports'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:35:58] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:39:31] "GET /api/news/ HTTP/1.1" 200 946884
+[21/Jun/2025 09:39:32] "GET /api/redis/ HTTP/1.1" 200 311
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:40:01] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+ ******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/cricket 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/football 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bbc bangla news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all daily star news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/science 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/national 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bd pratidin news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+ ******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all shikshabarta news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+The Daily Star error: HTTPSConnectionPool(host='www.thedailystar.net', port=443): Read timed out. (read timeout=10)
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all dainikshiksha news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all news...
+[21/Jun/2025 09:41:19] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: [1158, 1159]
+Gemten_Sports Stored News Ids: [1159]
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:44:32] "GET /api/news/ HTTP/1.1" 200 948006
+[21/Jun/2025 09:44:32] "GET /api/redis/ HTTP/1.1" 200 324
+
+***** 21 June, 2025 - 09:45:02 AM '1158 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133903134780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:45:11 AM '1158 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:45:12 AM '1159 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133903224780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:45:21 AM '1159 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:45:21 AM '1159 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122099976020919449
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:45:37 AM '1159 news id' End Posting on ==> 'Gemten Sports'
+
+🐣 Just dropped 3 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:45:37] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: []
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:49:33] "GET /api/news/ HTTP/1.1" 200 948120
+[21/Jun/2025 09:49:33] "GET /api/redis/ HTTP/1.1" 200 311
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:50:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ ******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/cricket 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://khela.com/football 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+Request failed with status code 403
+
+
+Done, Scraping all bdcrictime news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bbc bangla news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all daily star news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/science 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/national 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all bd pratidin news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+ ******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all shikshabarta news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+&&& saving news &&&
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+Error parsing a card: 'NoneType' object is not subscriptable
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all dainikshiksha news...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+ ******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+*** skipping ***
+
+
+Done, Scraping all news...
+[21/Jun/2025 09:50:41] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: [1160, 1161, 1162, 1163, 1164, 1165, 1166]
+Gemten_Sports Stored News Ids: [1160, 1161, 1165, 1166]
+Gemten_Esports Stored News Ids: [1160, 1161, 1166]
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: [1161]
+Gemten_ShowBiz Stored News Ids: [1163]
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: [1162]
+Gemten_TradeBeat Stored News Ids: [1162]
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: [1162]
+[21/Jun/2025 09:54:34] "GET /api/news/ HTTP/1.1" 200 953574
+[21/Jun/2025 09:54:34] "GET /api/redis/ HTTP/1.1" 200 398
+
+***** 21 June, 2025 - 09:55:02 AM '1160 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133903818780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:55:12 AM '1160 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:55:13 AM '1161 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133903938780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:55:20 AM '1161 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:55:20 AM '1162 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133904022780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:55:30 AM '1162 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:55:30 AM '1163 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133904148780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:55:39 AM '1163 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:55:40 AM '1164 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122133904286780855
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:55:50 AM '1164 news id' End Posting on ==> 'Gemten News'
+
+
+***** 21 June, 2025 - 09:55:50 AM '1160 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122099979662919449
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:55:57 AM '1160 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 21 June, 2025 - 09:55:57 AM '1161 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122099979812919449
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:56:03 AM '1161 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 21 June, 2025 - 09:56:04 AM '1165 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122099980052919449
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:56:11 AM '1165 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 21 June, 2025 - 09:56:12 AM '1166 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122099980292919449
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:56:19 AM '1166 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 21 June, 2025 - 09:56:20 AM '1161 news id' Start Posting on ==> 'Gemten Football'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/684520311406135_122110192154901991
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:56:27 AM '1161 news id' End Posting on ==> 'Gemten Football'
+
+
+***** 21 June, 2025 - 09:56:27 AM '1160 news id' Start Posting on ==> 'Gemten ESports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155034198589541
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:56:35 AM '1160 news id' End Posting on ==> 'Gemten ESports'
+
+
+***** 21 June, 2025 - 09:56:36 AM '1161 news id' Start Posting on ==> 'Gemten ESports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155034300589541
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:56:42 AM '1161 news id' End Posting on ==> 'Gemten ESports'
+
+
+***** 21 June, 2025 - 09:56:43 AM '1166 news id' Start Posting on ==> 'Gemten ESports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155034408589541
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:56:52 AM '1166 news id' End Posting on ==> 'Gemten ESports'
+
+
+***** 21 June, 2025 - 09:56:52 AM '1163 news id' Start Posting on ==> 'Gemten ShowBiz'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/680263785168283_122112083126894651
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:57:01 AM '1163 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 21 June, 2025 - 09:57:02 AM '1162 news id' Start Posting on ==> 'Gemten Scholar'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/108818517606899_1329802749150212
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:57:11 AM '1162 news id' End Posting on ==> 'Gemten Scholar'
+
+
+***** 21 June, 2025 - 09:57:11 AM '1162 news id' Start Posting on ==> 'Gemten Citizen'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/648557078333675_122126543936832449
+✅ Comment posted successfully!
+***** 21 June, 2025 - 09:57:20 AM '1162 news id' End Posting on ==> 'Gemten Citizen'
+
+🐣 Just dropped 16 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[21/Jun/2025 09:57:20] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Gemten_News Stored News Ids: [1165, 1166]
+Gemten_Sports Stored News Ids: []
+Gemten_Esports Stored News Ids: []
+Gemten_Cricket Stored News Ids: []
+Gemten_Football Stored News Ids: []
+Gemten_ShowBiz Stored News Ids: []
+Gemten_Terabyte Stored News Ids: []
+Gemten_Scholar Stored News Ids: []
+Gemten_TradeBeat Stored News Ids: []
+Gemten_Quantum Stored News Ids: []
+Gemten_PetVerse Stored News Ids: []
+Gemten_Citizen Stored News Ids: []
+[21/Jun/2025 09:59:34] "GET /api/news/ HTTP/1.1" 200 954267
+[21/Jun/2025 09:59:35] "GET /api/redis/ HTTP/1.1" 200 320
