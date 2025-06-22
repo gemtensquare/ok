@@ -329,6 +329,11 @@ class Scraping:
         url = base_url + topic
         try:
             res = requests.get(url, headers=HEADERS, timeout=30)
+
+            print()
+            print('***'*30)
+            print(url, res.status_code)
+
             if res.status_code == 200:
                 soup = BeautifulSoup(res.text, 'html.parser')
 
@@ -684,7 +689,7 @@ class Scraping:
         print()
         print()
         print('^^^'*30)
-        print("Scraping all daily star news...")
+        print("Scraping all daily star english news...")
         news_ids = []
         news_ids += Scraping.scrape_daily_star_en('business', 'Business')
 
