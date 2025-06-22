@@ -630,7 +630,8 @@ class Scraping:
 
         Helper.log_scraping_news('Lawer Club Bangladesh', news_ids=news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_NEWS_PAGE_ID, news_ids)
-        Helper.set_queue_news_to_page(constants.GEMTEN_ShowBiz_PAGE_ID, news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_SCHOLAR_PAGE_ID, news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_Citizen_PAGE_ID, news_ids)
 
         return news_ids
 
