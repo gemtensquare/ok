@@ -1,0 +1,907 @@
+🕒 New logs for: server since -> 23_June_2025 - 10_39_57_AM (UTC+6)
+===========================================================================
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[23/Jun/2025 10:10:55] "GET /api/news/scrape/ HTTP/1.1" 200 122
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155350686589541
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:11:03 AM '2042 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 23 June, 2025 - 10:11:04 AM '2042 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101711598919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:11:10 AM '2042 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 23 June, 2025 - 10:11:11 AM '2044 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101711700919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:11:20 AM '2044 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 23 June, 2025 - 10:11:20 AM '2045 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101711880919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:11:27 AM '2045 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 23 June, 2025 - 10:11:28 AM '2046 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101712048919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:11:37 AM '2046 news id' End Posting on ==> 'Gemten Sports'
+
+🐣 Just dropped 10 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 10:11:37] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [1889, 1890, 1891, 1892, 1893, 1894, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047]
+Gemten ShowBiz: []
+Gemten Esports: [2044, 2045, 2046]
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 10:14:53] "GET /api/news/ HTTP/1.1" 200 1595597
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 10:14:53] "GET /api/redis/ HTTP/1.1" 200 1025
+
+***** 23 June, 2025 - 10:15:02 AM '1889 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134259414780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:15:10 AM '1889 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:15:10 AM '1890 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134259492780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:15:22 AM '1890 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:15:22 AM '1891 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134259618780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:15:31 AM '1891 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:15:31 AM '1892 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134259756780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:15:52 AM '1892 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:15:52 AM '1893 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134259876780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:15:59 AM '1893 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:16:00 AM '2044 news id' Start Posting on ==> 'Gemten Esports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155351622589541
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:16:13 AM '2044 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 23 June, 2025 - 10:16:13 AM '2045 news id' Start Posting on ==> 'Gemten Esports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155351742589541
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:16:21 AM '2045 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 23 June, 2025 - 10:16:22 AM '2046 news id' Start Posting on ==> 'Gemten Esports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155351838589541
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:16:29 AM '2046 news id' End Posting on ==> 'Gemten Esports'
+
+🐣 Just dropped 8 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 10:16:29] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [1894, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047]
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 10:19:54] "GET /api/news/ HTTP/1.1" 200 1595773
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 10:19:54] "GET /api/redis/ HTTP/1.1" 200 986
+
+***** 23 June, 2025 - 10:20:01 AM '1894 news id' Start Posting on ==> 'Gemten News'
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134260572780855
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:20:11 AM '1894 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:20:11 AM '1895 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134260650780855
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:20:23 AM '1895 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:20:23 AM '1896 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134260770780855
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:20:32 AM '1896 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:20:32 AM '1897 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134260920780855
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+&&& saving news &&&
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:20:40 AM '1897 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:20:40 AM '1898 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134261124780855
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[23/Jun/2025 10:20:49] "GET /api/news/scrape/ HTTP/1.1" 200 122
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:20:49 AM '1898 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 10:20:49] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [2048, 2049, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047]
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 10:24:54] "GET /api/news/ HTTP/1.1" 200 1597130
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 10:24:55] "GET /api/redis/ HTTP/1.1" 200 971
+
+***** 23 June, 2025 - 10:25:02 AM '2048 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134261766780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:25:11 AM '2048 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:25:12 AM '2049 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134261862780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:25:21 AM '2049 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:25:21 AM '1899 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134261976780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:25:36 AM '1899 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:25:36 AM '1900 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134262060780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:25:45 AM '1900 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:25:45 AM '1901 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134262258780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:25:57 AM '1901 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 10:25:57] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047]
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 10:29:55] "GET /api/news/ HTTP/1.1" 200 1597244
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 10:29:55] "GET /api/redis/ HTTP/1.1" 200 946
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+***** 23 June, 2025 - 10:30:02 AM '1902 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134262798780855
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:30:10 AM '1902 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:30:10 AM '1903 news id' Start Posting on ==> 'Gemten News'
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134262882780855
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:30:20 AM '1903 news id' End Posting on ==> 'Gemten News'
+
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+***** 23 June, 2025 - 10:30:20 AM '1904 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134262990780855
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:30:33 AM '1904 news id' End Posting on ==> 'Gemten News'
+
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+***** 23 June, 2025 - 10:30:33 AM '1905 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134263116780855
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:30:54 AM '1905 news id' End Posting on ==> 'Gemten News'
+
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+
+***** 23 June, 2025 - 10:30:54 AM '1906 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[23/Jun/2025 10:30:58] "GET /api/news/scrape/ HTTP/1.1" 200 122
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134263200780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:31:06 AM '1906 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:31:07 AM '2050 news id' Start Posting on ==> 'Gemten ShowBiz'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/680263785168283_122112882470894651
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:31:15 AM '2050 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 23 June, 2025 - 10:31:16 AM '2051 news id' Start Posting on ==> 'Gemten Esports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155353362589541
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:31:23 AM '2051 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 23 June, 2025 - 10:31:24 AM '2052 news id' Start Posting on ==> 'Gemten Esports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155353440589541
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:31:36 AM '2052 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 23 June, 2025 - 10:31:36 AM '2051 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101719434919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:31:44 AM '2051 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 23 June, 2025 - 10:31:44 AM '2052 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101719602919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:31:52 AM '2052 news id' End Posting on ==> 'Gemten Sports'
+
+🐣 Just dropped 10 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 10:31:52] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [2050, 2051, 2052, 2053, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047]
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 10:34:56] "GET /api/news/ HTTP/1.1" 200 1600489
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 10:34:56] "GET /api/redis/ HTTP/1.1" 200 941
+
+***** 23 June, 2025 - 10:35:02 AM '2050 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134263614780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:35:11 AM '2050 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:35:11 AM '2051 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134263686780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:35:17 AM '2051 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:35:17 AM '2052 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134263824780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:35:24 AM '2052 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:35:25 AM '2053 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134263944780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:35:36 AM '2053 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 10:35:36 AM '1907 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134264058780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 10:35:46 AM '1907 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 10:35:46] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047]
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 10:39:56] "GET /api/news/ HTTP/1.1" 200 1600602
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 10:39:57] "GET /api/redis/ HTTP/1.1" 200 916
