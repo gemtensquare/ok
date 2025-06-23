@@ -1,4 +1,3 @@
-from .helpers import Helper
 
 CRON_LOG_FILE = '/logs/cron_log.txt'
 
@@ -36,7 +35,7 @@ GEMTEN_Global_PAGE_ID = '707885135740557'
 #     'Gemten_Citizen': GEMTEN_Citizen_PAGE_ID,
 # }
 
-GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
+# GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
 
 
 

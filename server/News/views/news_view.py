@@ -10,6 +10,7 @@ from rest_framework.response import Response
 from ..models import *
 from ..serializers import *
 from Helper import constants
+from Helper.helpers import Helper
 from Helper.scraping import Scraping
 from Helper.response import ResponseHelper
 
@@ -23,9 +24,9 @@ class NewsAPIView(APIView):
         # news_ids += [1,3,4,5,2]
         # cache.set('571480596045760', news_ids)
         # cache.delete('571480596045760')
-        
-        for pages in constants.GEMTEN_PAGES:
-            msg = f'{pages}: {cache.get(constants.GEMTEN_PAGES[pages], [])}'
+        GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
+        for pages in GEMTEN_PAGES:
+            msg = f'{pages}: {cache.get(GEMTEN_PAGES[pages], [])}'
             print(msg)
             
         start_time = timezone.localtime()
@@ -119,8 +120,9 @@ class ClearRedisCache(APIView):
 class GetRedisCache(APIView):
     def get_all_page_cache(self):
         caches_data = {}
-        for name in constants.GEMTEN_PAGES:
-            page_id = constants.GEMTEN_PAGES[name]
+        GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
+        for name in GEMTEN_PAGES:
+            page_id = GEMTEN_PAGES[name]
             caches_data[name] = cache.get(page_id, [])
         return caches_data
 
