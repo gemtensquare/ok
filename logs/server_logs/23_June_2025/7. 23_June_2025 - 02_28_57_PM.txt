@@ -1,0 +1,1893 @@
+🕒 New logs for: server since -> 23_June_2025 - 02_28_57_PM (UTC+6)
+===========================================================================
+-e [1;33m🔄 Starting cron service...[0m
+Starting periodic command scheduler: cron.
+-e [1;33m🧹 Cleaning up existing Django cron jobs...[0m
+no crontab for root
+-e [1;33m➕ Adding new Django cron jobs...[0m
+no crontab for root
+  adding cronjob: (8b065d26d1695e2afafbd7f301300a04) -> ('*/10 * * * *', 'Helper.cron.cron_scrape_all_news')
+  adding cronjob: (250edfcb8fb345166f9866cf46b7c39c) -> ('*/5 * * * *', 'Helper.cron.cron_auto_post_news_to_all_pages')
+  adding cronjob: (f3b3a9ec733a5c1975eb172d7fccfef4) -> ('*/10 * * * *', 'Helper.cron.cron_scrape_all_jugantor_news')
+  adding cronjob: (dec295f8ec26ac3be7c3b20b41a2bea4) -> ('*/15 * * * *', 'Helper.cron.cron_scrape_all_bdcrictime_news')
+-e [1;33m⚙️  Running makemigrations...[0m
+No changes detected
+-e [1;33m📦 Applying database migrations...[0m
+Operations to perform:
+  Apply all migrations: News, Pages, TestApp, admin, auth, contenttypes, sessions
+Running migrations:
+  Applying News.0001_initial... OK
+  Applying Pages.0001_initial... OK
+  Applying TestApp.0001_initial... OK
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+-e [0;32m🚀 Starting Django development server at http://0.0.0.0:8000 ...[0m
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2025 - 13:31:38
+Django version 5.2.3, using settings 'GemtenAi.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{}
+[23/Jun/2025 13:31:40] "GET /api/news/ HTTP/1.1" 200 104
+[23/Jun/2025 13:31:41] "GET /api/template/ HTTP/1.1" 200 89
+[23/Jun/2025 13:31:42] "GET /api/template/ HTTP/1.1" 200 1815
+[23/Jun/2025 13:31:42] "GET /Media/template_images/Gemten-news.png HTTP/1.1" 200 1488449
+[23/Jun/2025 13:31:42] "GET /Media/template_images/Gemten-news_LbtjvXp.png HTTP/1.1" 200 1488449
+[23/Jun/2025 13:31:42] "GET /Media/template_images/Gemten-news_SYEj1th.png HTTP/1.1" 200 1488449
+[23/Jun/2025 13:31:42] "GET /Media/template_images/Gemten-Football.png HTTP/1.1" 200 1181921
+[23/Jun/2025 13:31:42] "GET /Media/template_images/Gemten-Terabite.png HTTP/1.1" 200 1560763
+[23/Jun/2025 13:31:42] "GET /Media/template_images/Gemten-Scholar.png HTTP/1.1" 200 2550146
+[23/Jun/2025 13:31:42] "GET /Media/template_images/Gemten-ESPORTS.png HTTP/1.1" 200 2550557
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+&&& saving news &&&
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[23/Jun/2025 13:32:40] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [2115, 2116, 2117, 2118]
+Gemten ShowBiz: []
+Gemten Esports: [2118]
+Gemten Terabyte: [2115]
+Gemten Sports: [2118]
+Gemten Global: []
+[23/Jun/2025 13:32:46] "GET /api/news/ HTTP/1.1" 200 1656867
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [2115, 2116, 2117, 2118]
+Gemten ShowBiz: []
+Gemten Esports: [2118]
+Gemten Terabyte: [2115]
+Gemten Sports: [2118]
+Gemten Global: []
+[23/Jun/2025 13:32:52] "GET /api/news/ HTTP/1.1" 200 1656867
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 13:32:52] "GET /api/redis/ HTTP/1.1" 200 246
+
+***** 23 June, 2025 - 01:35:02 PM '2115 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134302596780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 01:35:10 PM '2115 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 01:35:11 PM '2116 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134302674780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 01:35:17 PM '2116 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 01:35:17 PM '2117 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134302746780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 01:35:24 PM '2117 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 01:35:25 PM '2118 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134302872780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 01:35:32 PM '2118 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 01:35:33 PM '2118 news id' Start Posting on ==> 'Gemten Esports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155374104589541
+✅ Comment posted successfully!
+***** 23 June, 2025 - 01:35:39 PM '2118 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 23 June, 2025 - 01:35:40 PM '2115 news id' Start Posting on ==> 'Gemten Terabyte'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/644657182073016_122111200808903154
+✅ Comment posted successfully!
+***** 23 June, 2025 - 01:35:46 PM '2115 news id' End Posting on ==> 'Gemten Terabyte'
+
+
+***** 23 June, 2025 - 01:35:46 PM '2118 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101835534919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 01:35:51 PM '2118 news id' End Posting on ==> 'Gemten Sports'
+
+🐣 Just dropped 7 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 13:35:51] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 13:37:58] "GET /api/news/ HTTP/1.1" 200 1657213
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 13:37:58] "GET /api/redis/ HTTP/1.1" 200 215
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 13:40:01] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[23/Jun/2025 13:41:08] "GET /api/news/scrape/ HTTP/1.1" 200 110
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 13:43:04] "GET /api/news/ HTTP/1.1" 200 1657213
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 13:43:04] "GET /api/redis/ HTTP/1.1" 200 215
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 13:45:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 13:48:10] "GET /api/news/ HTTP/1.1" 200 1657213
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 13:48:10] "GET /api/redis/ HTTP/1.1" 200 215
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 13:50:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[23/Jun/2025 13:51:08] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [2120, 2119]
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 13:53:15] "GET /api/news/ HTTP/1.1" 200 1658677
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 13:53:16] "GET /api/redis/ HTTP/1.1" 200 224
+
+***** 23 June, 2025 - 01:55:03 PM '2120 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134304756780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 01:55:10 PM '2120 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 01:55:11 PM '2119 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134304846780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 01:55:18 PM '2119 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 2 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 13:55:18] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 13:58:21] "GET /api/news/ HTTP/1.1" 200 1658791
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 13:58:22] "GET /api/redis/ HTTP/1.1" 200 215
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 14:00:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[23/Jun/2025 14:01:23] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [2121]
+Gemten ShowBiz: [2121]
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 14:03:27] "GET /api/news/ HTTP/1.1" 200 1659444
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 14:03:28] "GET /api/redis/ HTTP/1.1" 200 223
+
+***** 23 June, 2025 - 02:05:02 PM '2121 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134305776780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:05:10 PM '2121 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 02:05:10 PM '2121 news id' Start Posting on ==> 'Gemten ShowBiz'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/680263785168283_122112924716894651
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:05:17 PM '2121 news id' End Posting on ==> 'Gemten ShowBiz'
+
+🐣 Just dropped 2 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 14:05:17] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 14:08:33] "GET /api/news/ HTTP/1.1" 200 1659501
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 14:08:33] "GET /api/redis/ HTTP/1.1" 200 215
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 14:10:01] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+The Daily Star error: HTTPSConnectionPool(host='bangla.thedailystar.net', port=443): Read timed out. (read timeout=30)
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 500
+Request failed with status code 500
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 500
+Request failed with status code 500
+The Daily Star error: HTTPSConnectionPool(host='bangla.thedailystar.net', port=443): Read timed out. (read timeout=30)
+The Daily Star error: HTTPSConnectionPool(host='bangla.thedailystar.net', port=443): Read timed out. (read timeout=30)
+The Daily Star error: HTTPSConnectionPool(host='bangla.thedailystar.net', port=443): Read timed out. (read timeout=30)
+The Daily Star error: HTTPSConnectionPool(host='bangla.thedailystar.net', port=443): Read timed out. (read timeout=30)
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [2122]
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: [2122]
+Gemten Global: []
+[23/Jun/2025 14:13:39] "GET /api/news/ HTTP/1.1" 200 1660101
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 14:13:39] "GET /api/redis/ HTTP/1.1" 200 223
+The Daily Star error: HTTPSConnectionPool(host='www.thedailystar.net', port=443): Read timed out. (read timeout=10)
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[23/Jun/2025 14:13:55] "GET /api/news/scrape/ HTTP/1.1" 200 124
+
+***** 23 June, 2025 - 02:15:03 PM '2122 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134306478780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:15:10 PM '2122 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 02:15:10 PM '2122 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101859036919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:15:17 PM '2122 news id' End Posting on ==> 'Gemten Sports'
+
+🐣 Just dropped 2 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 14:15:17] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 14:18:45] "GET /api/news/ HTTP/1.1" 200 1660158
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 14:18:45] "GET /api/redis/ HTTP/1.1" 200 215
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 14:20:01] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+&&& saving news &&&
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[23/Jun/2025 14:20:52] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [2123, 2124, 2125]
+Gemten ShowBiz: []
+Gemten Esports: [2124, 2125]
+Gemten Terabyte: []
+Gemten Sports: [2124, 2125]
+Gemten Global: [2123]
+[23/Jun/2025 14:23:51] "GET /api/news/ HTTP/1.1" 200 1662437
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 14:23:51] "GET /api/redis/ HTTP/1.1" 200 251
+
+***** 23 June, 2025 - 02:25:02 PM '2123 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134307366780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:25:09 PM '2123 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 02:25:10 PM '2124 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134307468780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:25:16 PM '2124 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 02:25:17 PM '2125 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122134307570780855
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:25:30 PM '2125 news id' End Posting on ==> 'Gemten News'
+
+
+***** 23 June, 2025 - 02:25:31 PM '2124 news id' Start Posting on ==> 'Gemten Esports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155379840589541
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:25:37 PM '2124 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 23 June, 2025 - 02:25:38 PM '2125 news id' Start Posting on ==> 'Gemten Esports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/460605427136929_122155379912589541
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:25:44 PM '2125 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 23 June, 2025 - 02:25:44 PM '2124 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101865000919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:25:49 PM '2124 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 23 June, 2025 - 02:25:49 PM '2125 news id' Start Posting on ==> 'Gemten Sports'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/692806730579545_122101865120919449
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:25:58 PM '2125 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 23 June, 2025 - 02:25:58 PM '2123 news id' Start Posting on ==> 'Gemten Global'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/707885135740557_122105666060913253
+✅ Comment posted successfully!
+***** 23 June, 2025 - 02:26:05 PM '2123 news id' End Posting on ==> 'Gemten Global'
+
+🐣 Just dropped 8 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[23/Jun/2025 14:26:05] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[23/Jun/2025 14:28:57] "GET /api/news/ HTTP/1.1" 200 1662726
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[23/Jun/2025 14:28:57] "GET /api/redis/ HTTP/1.1" 200 215
