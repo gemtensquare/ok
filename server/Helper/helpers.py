@@ -474,7 +474,7 @@ class GemtenPostHelper:
         response = facebook.post_local_image_to_page(image_path=image_path, caption=caption)
         if response.status_code == 200:
             success_post_count += 1
-            full_comments = f'{news.intro}\n\n More details: {news.url} {constants.POST_HASHTAGS}'
+            full_comments = f'{news.intro}\n\nMore details: {news.url} {constants.POST_HASHTAGS}'
             # print(f"📌 full_comments:", full_comments)
             facebook.comment_on_post(response.json().get('post_id'), comment=full_comments)
         else:

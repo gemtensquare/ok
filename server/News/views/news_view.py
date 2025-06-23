@@ -133,7 +133,7 @@ class GetRedisCache(APIView):
         count, caches_data = self.get_all_page_cache()
         response = {
             'status': True,
-            'time': timezone.localtime(),
+            # 'time': timezone.localtime(),
             'message': "Here's the latest news queue now!",
             'total_posts_count': count,
             'caches_data': caches_data,
