@@ -18,8 +18,18 @@ from Helper.helpers import Helper, TemplateHelper, GemtenPostHelper
 
 
 class TestApiView(APIView):
+    def get_all_gemten_pages(self):
+        pages = GemtenPage.objects.all()
+        for page in pages:
+            page_id = page.get_id()
+            page_name = page.get_name()
+            cache.set(page_id, [1711], timeout=None)
+            print(page_name, page_id, cache.get(page_id, []))
+
     def get(self, request):
         data = [1]
+        # self.get_all_gemten_pages()
+        Helper.get_all_GEMTEN_PAGES()
 
 
         # pages = GemtenPage.objects.all()
@@ -29,10 +39,11 @@ class TestApiView(APIView):
         #     cache.set(page_id, [2855], timeout=None)
         #     print(page_name, page_id, cache.get(page_id, []))
         
+        News.remove_all_today_news()
         # GemtenPostHelper.process_and_publish_news_to_all_pages()
 
 
-        data += Scraping._scrape_all_ew_en_news()
+        # data += Scraping._scrape_all_ew_en_news()
         # cache.set(constants.GEMTEN_NEWS_PAGE_ID, [2478, 2479], timeout=None)
 
         # data += Scraping.scrape_all_jugantor_news()

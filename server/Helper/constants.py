@@ -1,3 +1,5 @@
+from .helpers import Helper
+
 CRON_LOG_FILE = '/logs/cron_log.txt'
 
 NEWS_CRON_LOG_FILE = '/logs/news_scraping_log.txt'
@@ -14,25 +16,27 @@ GEMTEN_TERABYTE_PAGE_ID = '644657182073016'
 GEMTEN_SCHOLAR_PAGE_ID = '108818517606899' 
 GEMTEN_TradeBeat_PAGE_ID = '108818517606899'
 GEMTEN_Quantum_PAGE_ID = '61577161163086' 
-GEMTEN_PetVerse_PAGE_ID = '653488074514664' 
+GEMTEN_PetVerse_PAGE_ID = '653488074514664'
 GEMTEN_Citizen_PAGE_ID = '648557078333675' 
+GEMTEN_Global_PAGE_ID = '707885135740557' 
 
 
-GEMTEN_PAGES = {
-    'Gemten_News': GEMTEN_NEWS_PAGE_ID,
-    'Gemten_Sports': GEMTEN_SPORTS_PAGE_ID,
-    'Gemten_Esports': GEMTEN_ESPORTS_PAGE_ID,
-    'Gemten_Cricket': GEMTEN_CRICKET_PAGE_ID,
-    'Gemten_Football': GEMTEN_FOOTBALL_PAGE_ID,
-    'Gemten_ShowBiz': GEMTEN_ShowBiz_PAGE_ID,
-    'Gemten_Terabyte': GEMTEN_TERABYTE_PAGE_ID,
-    'Gemten_Scholar': GEMTEN_SCHOLAR_PAGE_ID,
-    'Gemten_TradeBeat': GEMTEN_TradeBeat_PAGE_ID,
-    'Gemten_Quantum': GEMTEN_Quantum_PAGE_ID,
-    'Gemten_PetVerse': GEMTEN_PetVerse_PAGE_ID,
-    'Gemten_Citizen': GEMTEN_Citizen_PAGE_ID,
-}
+# GEMTEN_PAGES = {
+#     'Gemten_News': GEMTEN_NEWS_PAGE_ID,
+#     'Gemten_Sports': GEMTEN_SPORTS_PAGE_ID,
+#     'Gemten_Esports': GEMTEN_ESPORTS_PAGE_ID,
+#     'Gemten_Cricket': GEMTEN_CRICKET_PAGE_ID,
+#     'Gemten_Football': GEMTEN_FOOTBALL_PAGE_ID,
+#     'Gemten_ShowBiz': GEMTEN_ShowBiz_PAGE_ID,
+#     'Gemten_Terabyte': GEMTEN_TERABYTE_PAGE_ID,
+#     'Gemten_Scholar': GEMTEN_SCHOLAR_PAGE_ID,
+#     'Gemten_TradeBeat': GEMTEN_TradeBeat_PAGE_ID,
+#     'Gemten_Quantum': GEMTEN_Quantum_PAGE_ID,
+#     'Gemten_PetVerse': GEMTEN_PetVerse_PAGE_ID,
+#     'Gemten_Citizen': GEMTEN_Citizen_PAGE_ID,
+# }
 
+GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
 
 
 

@@ -14,6 +14,16 @@ class Helper:
     def helper():
         pass
 
+    def get_all_GEMTEN_PAGES():
+        GEMTEN_PAGES = {}
+        pages = GemtenPage.objects.all()
+        for page in pages:
+            GEMTEN_PAGES[page.get_name()] = page.get_id()
+        print('&&&'*30)
+        print(GEMTEN_PAGES)
+        return GEMTEN_PAGES
+        
+
     def set_queue_news_to_page(page_id, news_ids):
         old_news_ids = cache.get(page_id, [])
         news_ids = list(set(old_news_ids + news_ids))

@@ -25,7 +25,7 @@ class NewsAPIView(APIView):
         # cache.delete('571480596045760')
         
         for pages in constants.GEMTEN_PAGES:
-            msg = f'{pages} Stored News Ids: {cache.get(constants.GEMTEN_PAGES[pages], [])}'
+            msg = f'{pages}: {cache.get(constants.GEMTEN_PAGES[pages], [])}'
             print(msg)
             
         start_time = timezone.localtime()
