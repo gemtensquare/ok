@@ -22,8 +22,12 @@ jobs:
       - name: 💽 Check disk usage
         run: ./scripts/check_disk.sh
 
-      # - name: 📁 Check project files
-      #   run: ./scripts/list_project_files.sh
+      - name: 📁 Check project files
+        run: ./scripts/list_project_files.sh
+
+
+      - name: 🌐 Remove migrations
+        run: ./scripts/clean_django.sh
 
       # - name: 🚀 Remove Docker containers + volumes
       #   run: docker compose down -v

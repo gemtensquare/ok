@@ -8,11 +8,11 @@ NC='\033[0m' # No Color
 echo -e "${GREEN}🔍 Searching for Django migrations and Python files to delete...${NC}"
 
 # Delete all migrations folders except __init__.py
-# find . -type d -name "migrations" | while read dir; do
-#   echo -e "${RED}🗑️ Deleting Python files in $dir (except __init__.py)...${NC}"
-#   find "$dir" -type f -name "*.py" ! -name "__init__.py" -delete
-#   find "$dir" -type f -name "*.pyc" -delete
-# done
+find . -type d -name "migrations" | while read dir; do
+  echo -e "${RED}🗑️ Deleting Python files in $dir (except __init__.py)...${NC}"
+  find "$dir" -type f -name "*.py" ! -name "__init__.py" -delete
+  find "$dir" -type f -name "*.pyc" -delete
+done
 
 # Optionally delete all migrations folders completely (uncomment below if needed)
 # echo -e "${RED}🗑️ Deleting all 'migrations' directories...${NC}"
