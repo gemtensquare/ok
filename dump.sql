@@ -2663,6 +2663,7 @@ COPY public."News_news" (id, intro, title, url, image_url, source, image, type, 
 2329	ডা. জোবাইদা রহমানের বাড়ি সিলেটের দক্ষিণ সুরমায়। পেশায় চিকিৎসক জোবাইদা রাজনীতিতে সক্রিয় নন। অবশ্য তিনি আগামী নির্বাচনে প্রার্থী হবেন কিনা, ...	ভোটার হলেন জোবাইদা রহমান	https://www.jugantor.com/politics/969216	https://cdn.jugantor.com/assets/news_photos/2025/06/23/Untitled-1-68595460c2397.jpg	jugantor.com	news_images/1750696809_31757.jpg	bn	Politics	f	{}	2025-06-23 16:40:09.32011+00	2025-06-23 16:40:09.321718+00
 2330	মীর জাফর ও হাসিনার মত দেশকে বিকিয়ে দেওয়া যাবে না বলে মন্তব্য করেছেন জাতীয় গণতান্ত্রিক পার্টি (জাগপা) সহ-সভাপতি ও দলীয় ...	মীর জাফর ও হাসিনার মতো দেশকে বিকিয়ে দেওয়া যাবে না: রাশেদ প্রধান	https://www.jugantor.com/politics/969230	https://cdn.jugantor.com/assets/news_photos/2025/06/23/BeFunky-collage-(13)-6859633bf4043.jpg	jugantor.com	news_images/1750697407_39920.jpg	bn	Politics	f	{}	2025-06-23 16:50:07.633543+00	2025-06-23 16:50:07.635692+00
 2331	বাংলাদেশ জামায়াতে ইসলামীর সঙ্গে বৈঠক করেছেন ঢাকায় নিযুক্ত কানাডার হাইকমিশনার অজিত সিং। সোমবার সকালে রাজধানীর মগবাজারে জামায়াতের কেন্দ্রীয় কার্যালয়ে দলটির ...	কানাডার হাইকমিশনারের সঙ্গে জামায়াতের বৈঠক, যেসব কথা হলো	https://www.jugantor.com/politics/969252	https://cdn.jugantor.com/assets/news_photos/2025/06/23/Untitled-10-685977ed8ed34.jpg	jugantor.com	news_images/1750698008_25522.jpg	bn	Politics	f	{}	2025-06-23 17:00:08.071151+00	2025-06-23 17:00:08.073149+00
+2332	আগামী জাতীয় সংসদ নির্বাচনে সব ভোটকেন্দ্রে সিসিটিভি ক্যামেরা স্থাপনের জন্য কানাডার কাছে আর্থিক সহযোগিতা চেয়েছে জামায়াতে ইসলামী। ...	ভোটকেন্দ্রে সিসিটিভি স্থাপনে কানাডার সহযোগিতা চায় জামায়াত	https://www.jugantor.com/politics/969256	https://cdn.jugantor.com/assets/news_photos/2025/06/23/Jamat-68597d3605e98.jpg	jugantor.com	news_images/1750703407_55816.jpg	bn	Politics	f	{}	2025-06-23 18:30:07.786871+00	2025-06-23 18:30:07.788896+00
 \.
 
 
@@ -2878,7 +2879,7 @@ q44nlaox6gzi6kd6ghdfzrebx7r8pe00	.eJxVjEEOwiAQRe_C2pDCMLR16d4zEIYZbNVAUtqV8e7apA
 -- Name: News_news_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."News_news_id_seq"', 2331, true);
+SELECT pg_catalog.setval('public."News_news_id_seq"', 2332, true);
 
 
 --
