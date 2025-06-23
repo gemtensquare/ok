@@ -2,8 +2,8 @@
 CRONJOBS = [
     
     
-    ('*/10 * * * *', 'Helper.cron.cron_scrape_all_news'),
-    ('*/5 * * * *', 'Helper.cron.cron_auto_post_news_to_all_pages'),
+    ('*/7 * * * *', 'Helper.cron.cron_scrape_all_news'),
+    ('*/4 * * * *', 'Helper.cron.cron_auto_post_news_to_all_pages'),
 
 
     # ('*/4 * * * *', 'Helper.cron.cron_post_to_facebook_page'),
