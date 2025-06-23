@@ -119,19 +119,24 @@ class ClearRedisCache(APIView):
 
 class GetRedisCache(APIView):
     def get_all_page_cache(self):
+        count = 0
         caches_data = {}
         GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
         for name in GEMTEN_PAGES:
             page_id = GEMTEN_PAGES[name]
+            count += len(cache.get(page_id, []))
             caches_data[name] = cache.get(page_id, [])
-        return caches_data
+        return count, caches_data
 
     def get(self, request):
         # cache.set(constants.GEMTEN_NEWS_PAGE_ID, [1, 2, 3, 4, 5])
+        count, caches_data = self.get_all_page_cache()
         response = {
             'status': True,
+            'time': timezone.localtime(),
             'message': "Here's the latest news queue now!",
-            'data': self.get_all_page_cache()
+            'total_posts_count': count,
+            'caches_data': caches_data,
         }
         return Response(response, status=status.HTTP_200_OK)
 
