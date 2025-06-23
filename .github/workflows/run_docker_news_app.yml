@@ -52,8 +52,8 @@ jobs:
       # - name: 🌐 Re-check /api/news/
       #   run: ./scripts/check_news_endpoint.sh
 
-      # - name: 🗞️ Run news scraper
-      #   run: ./scripts/scrape_news.sh
+      - name: 🗞️ Run news scraper
+        run: ./scripts/scrape_news.sh
 
       - name: 🔎 Final news check
         run: ./scripts/final_check_news_list.sh
