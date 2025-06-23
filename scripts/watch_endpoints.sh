@@ -32,7 +32,7 @@ while true; do
   echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
   
   git pull origin main
-  sleep 10
+  sleep 5
   # Hit /api/news/
   news_response=$(curl -sSf http://127.0.0.1:8000/api/news/)
   if [[ $? -eq 0 ]]; then
