@@ -235,7 +235,7 @@ class Scraping:
         print(url, response.status_code)
 
         if response.status_code != 200:
-            return 
+            return []
         
         soup = BeautifulSoup(response.text, 'html.parser')
 
