@@ -1,0 +1,2866 @@
+🕒 New logs for: server since -> 26_June_2025 - 06_28_37_PM (UTC+6)
+===========================================================================
+-e [1;33m🔄 Starting cron service...[0m
+Starting periodic command scheduler: cron.
+-e [1;33m🧹 Cleaning up existing Django cron jobs...[0m
+no crontab for root
+-e [1;33m➕ Adding new Django cron jobs...[0m
+no crontab for root
+  adding cronjob: (4396ea372f887dbe57c934d027c0ca82) -> ('*/7 * * * *', 'Helper.cron.cron_scrape_all_news')
+  adding cronjob: (d5223f87e790391649d66c44d592e56d) -> ('*/4 * * * *', 'Helper.cron.cron_auto_post_news_to_all_pages')
+  adding cronjob: (f3b3a9ec733a5c1975eb172d7fccfef4) -> ('*/10 * * * *', 'Helper.cron.cron_scrape_all_jugantor_news')
+  adding cronjob: (dec295f8ec26ac3be7c3b20b41a2bea4) -> ('*/15 * * * *', 'Helper.cron.cron_scrape_all_bdcrictime_news')
+-e [1;33m⚙️  Running makemigrations...[0m
+No changes detected
+-e [1;33m📦 Applying database migrations...[0m
+Operations to perform:
+  Apply all migrations: News, Pages, TestApp, admin, auth, contenttypes, sessions
+Running migrations:
+  Applying News.0001_initial... OK
+  Applying Pages.0001_initial... OK
+  Applying TestApp.0001_initial... OK
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+-e [0;32m🚀 Starting Django development server at http://0.0.0.0:8000 ...[0m
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2025 - 17:31:20
+Django version 5.2.3, using settings 'GemtenAi.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{}
+[26/Jun/2025 17:31:22] "GET /api/news/ HTTP/1.1" 200 105
+[26/Jun/2025 17:31:23] "GET /api/template/ HTTP/1.1" 200 89
+[26/Jun/2025 17:31:24] "GET /api/template/ HTTP/1.1" 200 1815
+[26/Jun/2025 17:31:24] "GET /Media/template_images/Gemten-news.png HTTP/1.1" 200 1488449
+[26/Jun/2025 17:31:24] "GET /Media/template_images/Gemten-news_LbtjvXp.png HTTP/1.1" 200 1488449
+[26/Jun/2025 17:31:24] "GET /Media/template_images/Gemten-news_SYEj1th.png HTTP/1.1" 200 1488449
+[26/Jun/2025 17:31:24] "GET /Media/template_images/Gemten-Football.png HTTP/1.1" 200 1181921
+[26/Jun/2025 17:31:24] "GET /Media/template_images/Gemten-Terabite.png HTTP/1.1" 200 1560763
+[26/Jun/2025 17:31:24] "GET /Media/template_images/Gemten-Scholar.png HTTP/1.1" 200 2550146
+[26/Jun/2025 17:31:24] "GET /Media/template_images/Gemten-ESPORTS.png HTTP/1.1" 200 2550557
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 17:31:51] "GET /api/news/scrape/ HTTP/1.1" 500 151126
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+***** 26 June, 2025 - 05:32:02 PM '3582 news id' Start Posting on ==> 'Gemten News'
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A0rU4iJ2TIh2luLmBsYw16t"}}
+***** 26 June, 2025 - 05:32:03 PM '3582 news id' End Posting on ==> 'Gemten News'
+
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+***** 26 June, 2025 - 05:32:04 PM '3583 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ALFZ4NeHzJmhUNy0eqQDLn-"}}
+***** 26 June, 2025 - 05:32:04 PM '3583 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 17:32:04] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 17:32:11] "GET /api/news/scrape/ HTTP/1.1" 500 151116
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[26/Jun/2025 17:32:21] "GET /api/news/ HTTP/1.1" 200 2882705
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[26/Jun/2025 17:32:28] "GET /api/news/ HTTP/1.1" 200 2882705
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 17:32:29] "GET /api/redis/ HTTP/1.1" 200 215
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+&&& saving news &&&
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 17:35:22] "GET /api/news/scrape/ HTTP/1.1" 500 151408
+
+***** 26 June, 2025 - 05:36:02 PM '3584 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ahmc00kc5Ud_4GiPT603_9o"}}
+***** 26 June, 2025 - 05:36:03 PM '3584 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 05:36:03 PM '3584 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A0dLoktsQGhzfNNC6DqBskf"}}
+***** 26 June, 2025 - 05:36:03 PM '3584 news id' End Posting on ==> 'Gemten Sports'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 17:36:03] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[26/Jun/2025 17:37:34] "GET /api/news/ HTTP/1.1" 200 2883441
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 17:37:35] "GET /api/redis/ HTTP/1.1" 200 215
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 17:40:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 17:42:32] "GET /api/news/scrape/ HTTP/1.1" 500 151414
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [3585, 3586]
+Gemten ShowBiz: [3586]
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: [3586]
+[26/Jun/2025 17:42:40] "GET /api/news/ HTTP/1.1" 200 2884648
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 17:42:41] "GET /api/redis/ HTTP/1.1" 200 232
+
+***** 26 June, 2025 - 05:44:02 PM '3585 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AOjBJOqZgCadGIBzu3X4fEx"}}
+***** 26 June, 2025 - 05:44:03 PM '3585 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 05:44:03 PM '3586 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AZPINaLnMCLNVfyZxGIZjFu"}}
+***** 26 June, 2025 - 05:44:04 PM '3586 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 05:44:04 PM '3586 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AqrEMOrldb-lFmdNbmzOEJX"}}
+***** 26 June, 2025 - 05:44:04 PM '3586 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 26 June, 2025 - 05:44:04 PM '3586 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ANkidoTSaenQPEjRuaoB1jW"}}
+***** 26 June, 2025 - 05:44:04 PM '3586 news id' End Posting on ==> 'Gemten Global'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 17:44:04] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[26/Jun/2025 17:47:47] "GET /api/news/ HTTP/1.1" 200 2884762
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 17:47:47] "GET /api/redis/ HTTP/1.1" 200 215
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 17:48:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 17:49:22] "GET /api/news/scrape/ HTTP/1.1" 500 151404
+
+***** 26 June, 2025 - 05:52:02 PM '3587 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A6T9ebEH_EbH9vhTOcl0ruA"}}
+***** 26 June, 2025 - 05:52:03 PM '3587 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 17:52:03] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[26/Jun/2025 17:52:53] "GET /api/news/ HTTP/1.1" 200 2885580
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 17:52:53] "GET /api/redis/ HTTP/1.1" 200 215
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 17:56:01] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+&&& saving news &&&
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 17:56:28] "GET /api/news/scrape/ HTTP/1.1" 500 151426
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [3588, 3589, 3590, 3591]
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[26/Jun/2025 17:57:59] "GET /api/news/ HTTP/1.1" 200 2888022
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 17:58:00] "GET /api/redis/ HTTP/1.1" 200 234
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+***** 26 June, 2025 - 06:00:03 PM '3588 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AqbQe7cYvYVMvRBP0V7G8Uw"}}
+***** 26 June, 2025 - 06:00:03 PM '3588 news id' End Posting on ==> 'Gemten News'
+
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+
+***** 26 June, 2025 - 06:00:04 PM '3589 news id' Start Posting on ==> 'Gemten News'
+*** skipping for image ***
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AKMV180tVd2py2WsuCLzGmw"}}
+***** 26 June, 2025 - 06:00:05 PM '3589 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:00:05 PM '3590 news id' Start Posting on ==> 'Gemten News'
+*** skipping for image ***
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A81rtDIu2gYGVJAcbbfIXH1"}}
+***** 26 June, 2025 - 06:00:06 PM '3590 news id' End Posting on ==> 'Gemten News'
+
+*** skipping for image ***
+*** skipping for image ***
+
+***** 26 June, 2025 - 06:00:06 PM '3591 news id' Start Posting on ==> 'Gemten News'
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A2W7KxYn2sWAYKGY-j8Vd4e"}}
+***** 26 June, 2025 - 06:00:07 PM '3591 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 18:00:07] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 18:01:09] "GET /api/news/scrape/ HTTP/1.1" 500 151413
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [3592, 3593]
+Gemten ShowBiz: []
+Gemten Esports: [3592]
+Gemten Terabyte: []
+Gemten Sports: [3592]
+Gemten Global: [3593]
+[26/Jun/2025 18:03:05] "GET /api/news/ HTTP/1.1" 200 2889579
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 18:03:06] "GET /api/redis/ HTTP/1.1" 200 236
+
+***** 26 June, 2025 - 06:04:02 PM '3592 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A5sYxecfUlzISLBzCCPGRKz"}}
+***** 26 June, 2025 - 06:04:02 PM '3592 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:04:03 PM '3593 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ax1IR_2LtX5upLNERs4ZuSE"}}
+***** 26 June, 2025 - 06:04:03 PM '3593 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:04:04 PM '3592 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ACEKptZMczAPeVxR9O3-MlF"}}
+***** 26 June, 2025 - 06:04:05 PM '3592 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 26 June, 2025 - 06:04:05 PM '3592 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Awkk6rcH3bPkURBOpmQeAL9"}}
+***** 26 June, 2025 - 06:04:05 PM '3592 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 26 June, 2025 - 06:04:05 PM '3593 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ax841z5aoR7K3OnYQYbIxTN"}}
+***** 26 June, 2025 - 06:04:05 PM '3593 news id' End Posting on ==> 'Gemten Global'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 18:04:05] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 18:07:22] "GET /api/news/scrape/ HTTP/1.1" 500 151407
+
+***** 26 June, 2025 - 06:08:02 PM '3594 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AupPZvD6O9Vy8RcoFd8xSo-"}}
+***** 26 June, 2025 - 06:08:02 PM '3594 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:08:02 PM '3594 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AIE9Aaya-sFur77s-4kLUkz"}}
+***** 26 June, 2025 - 06:08:02 PM '3594 news id' End Posting on ==> 'Gemten ShowBiz'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 18:08:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[26/Jun/2025 18:08:11] "GET /api/news/ HTTP/1.1" 200 2890482
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 18:08:12] "GET /api/redis/ HTTP/1.1" 200 215
+
+***** 26 June, 2025 - 06:12:03 PM '3595 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ax-paRw5gdC7J8rgtak1j3Q"}}
+***** 26 June, 2025 - 06:12:03 PM '3595 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 18:12:03] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[26/Jun/2025 18:13:18] "GET /api/news/ HTTP/1.1" 200 2891472
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 18:13:18] "GET /api/redis/ HTTP/1.1" 200 215
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+&&& saving news &&&
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 18:14:25] "GET /api/news/scrape/ HTTP/1.1" 500 151414
+
+***** 26 June, 2025 - 06:16:02 PM '3596 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AyMcSmRZ0z-ibgSYU8NmoA7"}}
+***** 26 June, 2025 - 06:16:02 PM '3596 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:16:03 PM '3597 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A37A-aP5yewd-Wb-zUBg00U"}}
+***** 26 June, 2025 - 06:16:03 PM '3597 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:16:03 PM '3596 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AG5c2YthHsjsAhdiDrbSLvX"}}
+***** 26 June, 2025 - 06:16:04 PM '3596 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 26 June, 2025 - 06:16:04 PM '3596 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A7YaAS_6IX5_kL1nGE1urUM"}}
+***** 26 June, 2025 - 06:16:04 PM '3596 news id' End Posting on ==> 'Gemten Global'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 18:16:04] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: []
+Gemten ShowBiz: []
+Gemten Esports: []
+Gemten Terabyte: []
+Gemten Sports: []
+Gemten Global: []
+[26/Jun/2025 18:18:24] "GET /api/news/ HTTP/1.1" 200 2893029
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 18:18:24] "GET /api/redis/ HTTP/1.1" 200 215
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 18:20:02] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 18:21:33] "GET /api/news/scrape/ HTTP/1.1" 500 151412
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [3600, 3601, 3598, 3599]
+Gemten ShowBiz: [3601, 3599]
+Gemten Esports: [3600]
+Gemten Terabyte: []
+Gemten Sports: [3600]
+Gemten Global: [3601]
+[26/Jun/2025 18:23:30] "GET /api/news/ HTTP/1.1" 200 2896128
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 18:23:31] "GET /api/redis/ HTTP/1.1" 200 255
+
+***** 26 June, 2025 - 06:24:02 PM '3600 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AWOZB24htRQLaJZN86EfO6u"}}
+***** 26 June, 2025 - 06:24:02 PM '3600 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:24:03 PM '3601 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AW6qdBybCf9qHjsskqF6W9d"}}
+***** 26 June, 2025 - 06:24:03 PM '3601 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:24:04 PM '3598 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AAWvsxSW51BZ07uwrT35Zhh"}}
+***** 26 June, 2025 - 06:24:04 PM '3598 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:24:05 PM '3599 news id' Start Posting on ==> 'Gemten News'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ANHaYPnKKvo8Os3JZ803BQ4"}}
+***** 26 June, 2025 - 06:24:05 PM '3599 news id' End Posting on ==> 'Gemten News'
+
+
+***** 26 June, 2025 - 06:24:05 PM '3601 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AenyDsexGicRS5xqC71zZx3"}}
+***** 26 June, 2025 - 06:24:06 PM '3601 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 26 June, 2025 - 06:24:06 PM '3599 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A0qR1gmCwhyDqBVZEXCugtL"}}
+***** 26 June, 2025 - 06:24:06 PM '3599 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 26 June, 2025 - 06:24:07 PM '3600 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ABQ4XHRLcgpixz68_qfnFtF"}}
+***** 26 June, 2025 - 06:24:07 PM '3600 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 26 June, 2025 - 06:24:07 PM '3600 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ASudx3SL2_CBUDY2T9naO_v"}}
+***** 26 June, 2025 - 06:24:07 PM '3600 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 26 June, 2025 - 06:24:07 PM '3601 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AgYFkElKrnUaZkIyX1HIpBx"}}
+***** 26 June, 2025 - 06:24:08 PM '3601 news id' End Posting on ==> 'Gemten Global'
+
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 18:24:08] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[26/Jun/2025 18:28:01] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+&&& saving news &&&
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 955, in scrape_all_news
+    news_ids += Scraping.scrape_all_shikshabarta_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 911, in scrape_all_shikshabarta_news
+    College_news_ids = Scraping.scrape_shikshabarta_news("কলেজ/", "College")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 267, in scrape_shikshabarta_news
+    news_obj = Scraping.save_news(title, summary, category, news_url, image_url, source="shikshabarta.com")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 23, in save_news
+    image_response = requests.get(image_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+[26/Jun/2025 18:28:22] "GET /api/news/scrape/ HTTP/1.1" 500 151414
+
+)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+Gemten News: [3602, 3603]
+Gemten ShowBiz: []
+Gemten Esports: [3603]
+Gemten Terabyte: []
+Gemten Sports: [3602, 3603]
+Gemten Global: []
+[26/Jun/2025 18:28:36] "GET /api/news/ HTTP/1.1" 200 2897754
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+{'Gemten News': '571480596045760', 'Gemten ShowBiz': '680263785168283', 'Gemten Esports': '460605427136929', 'Gemten Terabyte': '644657182073016', 'Gemten Sports': '692806730579545', 'Gemten Global': '707885135740557'}
+[26/Jun/2025 18:28:37] "GET /api/redis/ HTTP/1.1" 200 237
