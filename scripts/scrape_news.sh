@@ -12,7 +12,7 @@ for i in {1..2}; do
     # fi
   else
     echo "⚠️ Attempt $i: Scrape endpoint not responding or took too long. Retrying in 5s..."
-    sleep 5
+    sleep 20
   fi
 done
 
