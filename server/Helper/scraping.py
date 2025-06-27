@@ -306,7 +306,7 @@ class Scraping:
             title = title_tag.text.strip() if title_tag else ""
             news_url = card.get("href", "")
 
-            if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
+            if not title or not news_url or News.objects.filter(title=title, url=news_url):
                 # print('*** skipping ***')
                 continue
 
@@ -956,7 +956,10 @@ class Scraping:
         news_ids += Scraping.scrape_all_daily_star_en_news()
         news_ids += Scraping.scrape_all_dainikshiksha_news()
         news_ids += Scraping.scrape_all_lawyersclubbangladesh_news()
+        
         print("\n\nDone, Scraping all news...")
+        Helper.log_scraping_news('😝 All News Site', news_ids=news_ids)
+
         return news_ids
     
 
