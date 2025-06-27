@@ -29,7 +29,7 @@ class TestApiView(APIView):
     def get(self, request):
         data = [1]
         # self.get_all_gemten_pages()
-        Helper.get_all_GEMTEN_PAGES()
+        # Helper.get_all_GEMTEN_PAGES()
 
 
         # pages = GemtenPage.objects.all()
@@ -39,8 +39,8 @@ class TestApiView(APIView):
         #     cache.set(page_id, [2855], timeout=None)
         #     print(page_name, page_id, cache.get(page_id, []))
         
-        News.remove_all_today_news()
-        # Scraping.scrape_all_shikshabarta_news()
+        # News.remove_all_today_news()
+        Scraping._scrape_bbc_dot_com_en_news()
         # GemtenPostHelper.process_and_publish_news_to_all_pages()
 
 

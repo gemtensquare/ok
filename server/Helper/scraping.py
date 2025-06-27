@@ -269,6 +269,66 @@ class Scraping:
             if news_obj:
                 news_ids.append(news_obj.id)
         return news_ids
+    
+    def scrape_bbc_dot_com(topic='news', category='News'):
+        base_url = 'https://www.bbc.com/'
+        url = base_url + topic
+
+        def process_image_url(url):
+            url = url.replace('/480/', '/999/') 
+            return url
+        
+        news_ids = []
+        try:
+            response = requests.get(url, headers=HEADERS, timeout=30)
+            print()
+            print('***'*30)
+            print(url, response.status_code)
+            if response.status_code != 200:
+                return []
+        except Exception as e:
+            print("Failed to fetch page:", e)
+            return []
+
+        soup = BeautifulSoup(response.text, 'html.parser')
+        cards = soup.select('.sc-225578b-0.btdqbl')  # ✅ uncommented
+        for card in cards:
+            # Article URL
+            url_tag = card.select_one('a')
+            news_url = base_url.rstrip('/') + url_tag['href'] if url_tag and url_tag.has_attr('href') else ""
+
+            if 'news/live/' in news_url:
+                continue
+
+            # Title
+            title_tag = card.select_one('[data-testid="card-headline"]')
+            title = title_tag.text.strip() if title_tag else ""
+
+            # Intro
+            intro_tag = card.select_one('[data-testid="card-description"]')
+            intro = intro_tag.text.strip() if intro_tag else ""
+
+            # Date
+            date_tag = card.select_one('[data-testid="card-metadata-lastupdated"]')
+            date = date_tag.text.strip() if date_tag else ""
+
+            # Tag/Location
+            tag_tag = card.select_one('[data-testid="card-metadata-tag"]')
+            tag = tag_tag.text.strip() if tag_tag else ""
+
+            # Image URL
+            img_tag = card.select_one('img.sc-d1200759-0.dvfjxj')
+            image_url = process_image_url(img_tag['src']) if img_tag and img_tag.has_attr('src') else ""
+
+            if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
+                continue
+
+            news_obj = Scraping.save_news(title, intro, category, news_url, image_url, source="bbc.com", type="en")
+            if news_obj:
+                news_ids.append(news_obj.id)
+        return news_ids
+
+
 
     def scrape_ew_en_news(topic, category=None):
         base_url = 'https://ew.com/'
@@ -623,7 +683,7 @@ class Scraping:
         print()
         print()
         print('^^^'*30)
-        print("Scraping all lawyersclubbangladesh news...")
+        print("&&& Scraping all lawyersclubbangladesh news...")
 
         news_ids = []
         news_ids += Scraping.scrape_lawyersclubbangladesh("পড়াশোনা/", "Education")
@@ -659,7 +719,7 @@ class Scraping:
         print()
         print()
         print('^^^'*30)
-        print("Scraping all pets news...")
+        print("&&& Scraping all pets news...")
         news_ids = Scraping.scrape_bbc_pets_news()
         Helper.log_scraping_news('Pets', news_ids=news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_PetVerse_PAGE_ID, news_ids)
@@ -669,7 +729,7 @@ class Scraping:
         print()
         print()
         print('^^^'*30)
-        print("Scraping all jagonews24 news...")
+        print("&&& Scraping all jagonews24 news...")
         news_ids = []
 
         Cricket_news_ids = Scraping.scrape_jagonews24('sports/cricket', 'Cricket')
@@ -692,7 +752,7 @@ class Scraping:
         print()
         print()
         print('^^^'*30)
-        print("Scraping all daily star english news...")
+        print("&&& Scraping all daily star english news...")
         news_ids = []
         news_ids += Scraping.scrape_daily_star_en('business', 'Business')
 
@@ -720,7 +780,7 @@ class Scraping:
         print()
         print()
         print('^^^'*30)
-        print("Scraping all ew news...")
+        print("&&& Scraping all ew news...")
         news_ids = []
         news_ids += Scraping.scrape_ew_en_news('books', 'Books')
         # Scraping.scrape_ew_en_news('binge', 'Entertainment')
@@ -734,13 +794,27 @@ class Scraping:
         Helper.set_queue_news_to_page(constants.GEMTEN_ShowBiz_PAGE_ID, news_ids)
         
         return news_ids
+
+    def _scrape_bbc_dot_com_en_news():
+        print()
+        print()
+        print('^^^'*30)
+        print("&&& Scraping all bbc.com en news...")
+        news_ids = []
+        news_ids += Scraping.scrape_bbc_dot_com('news', 'News')
+
+        Helper.log_scraping_news('bbc.com', news_ids=news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_NEWS_PAGE_ID, news_ids)
+        Helper.set_queue_news_to_page(constants.GEMTEN_Global_PAGE_ID, news_ids)
+        
+        return news_ids
     
 
     def scrape_all_jugantor_news():
         print()
         print()
         print('^^^'*30)
-        print("Scraping all jugantor news...")
+        print("&&& Scraping all jugantor news...")
         news_ids = []
         # return news_ids
         # news_ids += Scraping.scrape_jugantor('health', 'Health')
@@ -766,14 +840,14 @@ class Scraping:
         Helper.set_queue_news_to_page(constants.GEMTEN_Citizen_PAGE_ID, Politics_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_TERABYTE_PAGE_ID, Technology_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_ShowBiz_PAGE_ID, Entertainment_news_ids)
-        # print("\n\nDone, Scraping all jugantor news...")
+        # print("\n\nDone, &&& Scraping all jugantor news...")
         return news_ids
     
     def scrape_all_dainikshiksha_news():
         print()
         print()
         print('^^^'*30)
-        print("Scraping all dainikshiksha news...")
+        print("&&& Scraping all dainikshiksha news...")
         dainikshiksha_data = [
             (2, 'College'),
             (4, 'University'),
@@ -789,14 +863,14 @@ class Scraping:
         Helper.log_scraping_news('Dainik Shiksha', news_ids=news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_NEWS_PAGE_ID, news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_SCHOLAR_PAGE_ID, news_ids)
-        # print("\n\nDone, Scraping all dainikshiksha news...")
+        # print("\n\nDone, &&& Scraping all dainikshiksha news...")
         return news_ids
     
     def scrape_all_bd_pratidin_news():
         print()
         print()
         print('^^^'*30)
-        print("Scraping all bd pratidin news...")
+        print("&&& Scraping all bd pratidin news...")
         news_ids = []
         news_ids += Scraping.scrape_bd_pratidin('islam', 'Islam')
         news_ids += Scraping.scrape_bd_pratidin('economy', 'Economy')
@@ -819,14 +893,14 @@ class Scraping:
         Helper.set_queue_news_to_page(constants.GEMTEN_Citizen_PAGE_ID, Politics_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_Global_PAGE_ID, Entertainment_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_ShowBiz_PAGE_ID, Entertainment_news_ids)
-        # print("\n\nDone, Scraping all bd pratidin news...")
+        # print("\n\nDone, &&& Scraping all bd pratidin news...")
         return news_ids
     
     def scrape_all_bbc_bangla_news():
         print()
         print()
         print('^^^'*30)
-        print("Scraping all bbc bangla news...")
+        print("&&& Scraping all bbc bangla news...")
         news_ids = []
         news_ids += Scraping.scrape_bbc_bangla('cg7265yyxn1t', 'Health')
         news_ids += Scraping.scrape_bbc_bangla('cjgn7233zk5t', 'Economy')
@@ -847,14 +921,14 @@ class Scraping:
         Helper.set_queue_news_to_page(constants.GEMTEN_Citizen_PAGE_ID, Politics_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_Global_PAGE_ID, Technology_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_TERABYTE_PAGE_ID, Technology_news_ids)
-        # print("\n\nDone, Scraping all bbc bangla news...")
+        # print("\n\nDone, &&& Scraping all bbc bangla news...")
         return news_ids
     
     def scrape_all_daily_star_news():
         print()
         print()
         print('^^^'*30)
-        print("Scraping all daily star news...")
+        print("&&& Scraping all daily star news...")
         news_ids = []
         news_ids += Scraping.scrape_daily_star('health', 'Health')
         news_ids += Scraping.scrape_daily_star('business', 'Business')
@@ -877,14 +951,14 @@ class Scraping:
         Helper.set_queue_news_to_page(constants.GEMTEN_ESPORTS_PAGE_ID, Sports_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_TERABYTE_PAGE_ID, Technology_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_ShowBiz_PAGE_ID, Entertainment_news_ids)
-        # print("\n\nDone, Scraping all daily star news...")
+        # print("\n\nDone, &&& Scraping all daily star news...")
         return news_ids
     
     def scrape_all_bdcrictime_news():
         print()
         print()
         print('^^^'*30)
-        print("Scraping all bdcrictime news...")
+        print("&&& Scraping all bdcrictime news...")
         news_ids = []
 
         Sports_news_ids = Scraping.scrape_bdcrictime('news', 'Cricket')
@@ -896,14 +970,14 @@ class Scraping:
         Helper.set_queue_news_to_page(constants.GEMTEN_SPORTS_PAGE_ID, Sports_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_CRICKET_PAGE_ID, Sports_news_ids)
         Helper.set_queue_news_to_page(constants.GEMTEN_ESPORTS_PAGE_ID, Sports_news_ids)
-        # print("\n\nDone, Scraping all bdcrictime news...")
+        # print("\n\nDone, &&& Scraping all bdcrictime news...")
         return news_ids
     
     def scrape_all_shikshabarta_news():
         print()
         print()
         print('^^^'*30)
-        print("Scraping all shikshabarta news...")
+        print("&&& Scraping all shikshabarta news...")
         news_ids = []
 
         Jobs_news_ids = Scraping.scrape_shikshabarta_news("চাকরি/", "Jobs")
@@ -931,7 +1005,7 @@ class Scraping:
         Helper.set_queue_news_to_page(constants.GEMTEN_ShowBiz_PAGE_ID, Entertainment_news_ids)
         Helper.log_scraping_news('Shikshabarta', news_ids=news_ids)
         
-        # print("\n\nDone, Scraping all shikshabarta news...")
+        # print("\n\nDone, &&& Scraping all shikshabarta news...")
         return news_ids
     
 
@@ -940,7 +1014,7 @@ class Scraping:
         print()
         print()
         print('^^^'*30)
-        print("Scraping all news...")
+        print("&&& Scraping all news...")
         news_ids = []
         news_ids += Scraping.scrape_all_pets_news()
         news_ids += Scraping.scrape_all_khela_news()
@@ -952,12 +1026,13 @@ class Scraping:
         news_ids += Scraping.scrape_all_bbc_bangla_news()
         news_ids += Scraping.scrape_all_daily_star_news()
         news_ids += Scraping.scrape_all_bd_pratidin_news()
+        news_ids += Scraping._scrape_bbc_dot_com_en_news()
         news_ids += Scraping.scrape_all_shikshabarta_news()
         news_ids += Scraping.scrape_all_daily_star_en_news()
         news_ids += Scraping.scrape_all_dainikshiksha_news()
         news_ids += Scraping.scrape_all_lawyersclubbangladesh_news()
         
-        print("\n\nDone, Scraping all news...")
+        print("\n\nDone, &&& Scraping all news...")
         Helper.log_scraping_news('😝 All News Site', news_ids=news_ids)
 
         return news_ids
