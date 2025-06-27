@@ -1,0 +1,2825 @@
+🕒 New logs for: server since -> 27_June_2025 - 10_38_00_AM (UTC+6)
+===========================================================================
+-e [1;33m🔄 Starting cron service...[0m
+Starting periodic command scheduler: cron.
+-e [1;33m🧹 Cleaning up existing Django cron jobs...[0m
+no crontab for root
+-e [1;33m➕ Adding new Django cron jobs...[0m
+no crontab for root
+  adding cronjob: (e92cea70836108135f940e7c068a5b92) -> ('*/9 * * * *', 'Helper.cron.cron_scrape_all_news')
+  adding cronjob: (d5223f87e790391649d66c44d592e56d) -> ('*/4 * * * *', 'Helper.cron.cron_auto_post_news_to_all_pages')
+  adding cronjob: (f3b3a9ec733a5c1975eb172d7fccfef4) -> ('*/10 * * * *', 'Helper.cron.cron_scrape_all_jugantor_news')
+  adding cronjob: (dec295f8ec26ac3be7c3b20b41a2bea4) -> ('*/15 * * * *', 'Helper.cron.cron_scrape_all_bdcrictime_news')
+-e [1;33m⚙️  Running makemigrations...[0m
+No changes detected
+-e [1;33m📦 Applying database migrations...[0m
+Operations to perform:
+  Apply all migrations: News, Pages, TestApp, admin, auth, contenttypes, sessions
+Running migrations:
+  Applying News.0001_initial... OK
+  Applying Pages.0001_initial... OK
+  Applying TestApp.0001_initial... OK
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+-e [0;32m🚀 Starting Django development server at http://0.0.0.0:8000 ...[0m
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 27, 2025 - 09:41:19
+Django version 5.2.3, using settings 'GemtenAi.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+
+[27/Jun/2025 09:41:21] "GET /api/news/ HTTP/1.1" 200 192
+[27/Jun/2025 09:41:23] "GET /api/template/ HTTP/1.1" 200 89
+[27/Jun/2025 09:41:24] "GET /api/template/ HTTP/1.1" 200 1815
+[27/Jun/2025 09:41:24] "GET /Media/template_images/Gemten-news.png HTTP/1.1" 200 1488449
+[27/Jun/2025 09:41:24] "GET /Media/template_images/Gemten-news_LbtjvXp.png HTTP/1.1" 200 1488449
+[27/Jun/2025 09:41:24] "GET /Media/template_images/Gemten-news_SYEj1th.png HTTP/1.1" 200 1488449
+[27/Jun/2025 09:41:24] "GET /Media/template_images/Gemten-Football.png HTTP/1.1" 200 1181921
+[27/Jun/2025 09:41:24] "GET /Media/template_images/Gemten-Terabite.png HTTP/1.1" 200 1560763
+[27/Jun/2025 09:41:24] "GET /Media/template_images/Gemten-Scholar.png HTTP/1.1" 200 2550146
+[27/Jun/2025 09:41:24] "GET /Media/template_images/Gemten-ESPORTS.png HTTP/1.1" 200 2550557
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+&&& saving news &&&
+
+******************************************************************************************
+https://khela.com/cricket 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://khela.com/football 200
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 948, in scrape_all_news
+    news_ids += Scraping._scrape_all_ew_en_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 725, in _scrape_all_ew_en_news
+    news_ids += Scraping.scrape_ew_en_news('books', 'Books')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 309, in scrape_ew_en_news
+    if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
+                                        ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'image_url' where it is not associated with a value
+[27/Jun/2025 09:41:27] "GET /api/news/scrape/ HTTP/1.1" 500 110226
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 948, in scrape_all_news
+    news_ids += Scraping._scrape_all_ew_en_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 725, in _scrape_all_ew_en_news
+    news_ids += Scraping.scrape_ew_en_news('books', 'Books')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 309, in scrape_ew_en_news
+    if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
+                                        ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'image_url' where it is not associated with a value
+[27/Jun/2025 09:41:33] "GET /api/news/scrape/ HTTP/1.1" 500 110198
+
+[27/Jun/2025 09:41:44] "GET /api/news/ HTTP/1.1" 200 2901259
+
+[27/Jun/2025 09:41:51] "GET /api/news/ HTTP/1.1" 200 2901259
+[27/Jun/2025 09:41:51] "GET /api/redis/ HTTP/1.1" 200 253
+
+***** 27 June, 2025 - 09:44:03 AM '3610 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"APBRkrXqe3GFHxDBbRaSm5X"}}
+***** 27 June, 2025 - 09:44:04 AM '3610 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:44:05 AM '3611 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A6u_kziQfoVQPCHGRHMI4Qd"}}
+***** 27 June, 2025 - 09:44:05 AM '3611 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:44:06 AM '3612 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A8et74D05tCrZMuGXsUhVMf"}}
+***** 27 June, 2025 - 09:44:07 AM '3612 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:44:07 AM '3613 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AOEyeR2NkBI6-SoD25LC1WJ"}}
+***** 27 June, 2025 - 09:44:08 AM '3613 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:44:08 AM '3610 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135009222780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:44:19 AM '3610 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:44:19 AM '3611 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135009312780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:44:30 AM '3611 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:44:30 AM '3612 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135009396780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:44:39 AM '3612 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:44:39 AM '3613 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135009510780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:44:47 AM '3613 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 4 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 09:44:47] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 948, in scrape_all_news
+    news_ids += Scraping._scrape_all_ew_en_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 725, in _scrape_all_ew_en_news
+    news_ids += Scraping.scrape_ew_en_news('books', 'Books')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 309, in scrape_ew_en_news
+    if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
+                                        ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'image_url' where it is not associated with a value
+[27/Jun/2025 09:45:03] "GET /api/news/scrape/ HTTP/1.1" 500 110486
+
+[27/Jun/2025 09:46:57] "GET /api/news/ HTTP/1.1" 200 2901487
+[27/Jun/2025 09:46:57] "GET /api/redis/ HTTP/1.1" 200 215
+🐣 Just dropped 0 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 09:48:01] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+***** 27 June, 2025 - 09:52:03 AM '3638 news id' Start Posting on ==> 'Gemten ShowBiz'
+
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A7uok0nGF7T7PIylKIXt4wa"}}
+***** 27 June, 2025 - 09:52:03 AM '3638 news id' End Posting on ==> 'Gemten ShowBiz'
+
+[27/Jun/2025 09:52:03] "GET /api/news/ HTTP/1.1" 200 2930379
+[27/Jun/2025 09:52:04] "GET /api/redis/ HTTP/1.1" 200 487
+
+***** 27 June, 2025 - 09:52:04 AM '3639 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A_hFkIiFZhwJgVJjESxc_k2"}}
+***** 27 June, 2025 - 09:52:05 AM '3639 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 09:52:05 AM '3640 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AqLeSioihCCrUs5qHCSiwqI"}}
+***** 27 June, 2025 - 09:52:06 AM '3640 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 09:52:07 AM '3641 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AOpPAG2meeq9gEoo1n8MfYu"}}
+***** 27 June, 2025 - 09:52:07 AM '3641 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 09:52:08 AM '3642 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ANju3EfHh3nKx12wfOgBbAm"}}
+***** 27 June, 2025 - 09:52:09 AM '3642 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 09:52:10 AM '3616 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A6irS3udNnXJILknTf910pM"}}
+***** 27 June, 2025 - 09:52:10 AM '3616 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:52:11 AM '3617 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A_lsCkXT6FN7-hmFXvkofo5"}}
+***** 27 June, 2025 - 09:52:11 AM '3617 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:52:12 AM '3618 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AMsKMBwqe9n0U2bdJ-3NViS"}}
+***** 27 June, 2025 - 09:52:13 AM '3618 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:52:13 AM '3619 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AmYwDFWmHAJGjYmPBzjOTAn"}}
+***** 27 June, 2025 - 09:52:14 AM '3619 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:52:15 AM '3620 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AcVd32QircV4zw8XdK4YUp2"}}
+***** 27 June, 2025 - 09:52:15 AM '3620 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:52:16 AM '3616 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AAfrtl84m1v0BTi1HsyHg11"}}
+***** 27 June, 2025 - 09:52:17 AM '3616 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:52:17 AM '3617 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A3sDYHYfZHD06aAvSPrQKDV"}}
+***** 27 June, 2025 - 09:52:18 AM '3617 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:52:19 AM '3618 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ag98cetQMWLeKIj0xjjgaW7"}}
+***** 27 June, 2025 - 09:52:19 AM '3618 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:52:20 AM '3619 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ae5Seu6shLzeAl0ZwHluvAy"}}
+***** 27 June, 2025 - 09:52:20 AM '3619 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:52:21 AM '3620 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Aonr6iUlbF9U8yk_E3IQO6u"}}
+***** 27 June, 2025 - 09:52:22 AM '3620 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:52:22 AM '3614 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135010260780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:52:31 AM '3614 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:52:32 AM '3615 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135010338780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:52:42 AM '3615 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:52:42 AM '3616 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135010470780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:52:54 AM '3616 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:52:54 AM '3617 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135010602780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:53:02 AM '3617 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:53:02 AM '3618 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135010728780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:53:11 AM '3618 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 09:53:11] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 948, in scrape_all_news
+    news_ids += Scraping._scrape_all_ew_en_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 725, in _scrape_all_ew_en_news
+    news_ids += Scraping.scrape_ew_en_news('books', 'Books')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 309, in scrape_ew_en_news
+    if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
+                                        ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'image_url' where it is not associated with a value
+[27/Jun/2025 09:54:03] "GET /api/news/scrape/ HTTP/1.1" 500 110486
+
+***** 27 June, 2025 - 09:56:02 AM '3643 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AsUCxuIeDkeu3ZLInHqDjJV"}}
+***** 27 June, 2025 - 09:56:03 AM '3643 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 09:56:04 AM '3644 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AP7-YzJP4wdj3jziUZsB4QP"}}
+***** 27 June, 2025 - 09:56:04 AM '3644 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 09:56:05 AM '3645 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ACMXEJe3KjxeC9Oi08sHuJ2"}}
+***** 27 June, 2025 - 09:56:06 AM '3645 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 09:56:06 AM '3621 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AGrN7i6BQ9LZckICPlG2Le6"}}
+***** 27 June, 2025 - 09:56:07 AM '3621 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:56:08 AM '3622 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Af6ubQNYGm_RemaPqZs0DV3"}}
+***** 27 June, 2025 - 09:56:08 AM '3622 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:56:09 AM '3623 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"At1K4X15IyTO1Fh7YaHLALy"}}
+***** 27 June, 2025 - 09:56:10 AM '3623 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:56:10 AM '3624 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ARwdAqtZnElNTRrTovjgxI9"}}
+***** 27 June, 2025 - 09:56:11 AM '3624 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:56:12 AM '3625 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AWAGVj09_a4BbVPfy_vO-2A"}}
+***** 27 June, 2025 - 09:56:12 AM '3625 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 09:56:13 AM '3621 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A3dB8EhM1krz5DyKyhXN4iu"}}
+***** 27 June, 2025 - 09:56:14 AM '3621 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:56:14 AM '3622 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AxDQ2InDDGb1wi73r9NP8Qb"}}
+***** 27 June, 2025 - 09:56:15 AM '3622 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:56:16 AM '3623 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AgF92e-PN5lG-tSSN6QKa4F"}}
+***** 27 June, 2025 - 09:56:16 AM '3623 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:56:17 AM '3624 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A_UKEoVxaYnkwevAB8D6Flt"}}
+***** 27 June, 2025 - 09:56:18 AM '3624 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:56:18 AM '3625 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AiKde1f4Wsh-7188KHojSt9"}}
+***** 27 June, 2025 - 09:56:19 AM '3625 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 09:56:19 AM '3619 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135011406780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:56:28 AM '3619 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:56:28 AM '3620 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135011496780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:56:38 AM '3620 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:56:38 AM '3621 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135011646780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:56:46 AM '3621 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:56:46 AM '3622 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135011748780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:56:59 AM '3622 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 09:56:59 AM '3623 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135011904780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 09:57:08 AM '3623 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 09:57:08] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+[27/Jun/2025 09:57:10] "GET /api/news/ HTTP/1.1" 200 2932052
+[27/Jun/2025 09:57:10] "GET /api/redis/ HTTP/1.1" 200 325
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+***** 27 June, 2025 - 10:00:01 AM '3624 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 948, in scrape_all_news
+    news_ids += Scraping._scrape_all_ew_en_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 725, in _scrape_all_ew_en_news
+    news_ids += Scraping.scrape_ew_en_news('books', 'Books')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 309, in scrape_ew_en_news
+    if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
+                                        ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'image_url' where it is not associated with a value
+[27/Jun/2025 10:00:03] "GET /api/news/scrape/ HTTP/1.1" 500 110486
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135012420780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:00:10 AM '3624 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:00:10 AM '3625 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135012516780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:00:19 AM '3625 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:00:20 AM '3626 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135012660780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:00:29 AM '3626 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:00:30 AM '3627 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135012786780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:00:39 AM '3627 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:00:39 AM '3628 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135013008780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:00:49 AM '3628 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 10:00:49] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+[27/Jun/2025 10:02:16] "GET /api/news/ HTTP/1.1" 200 2933058
+[27/Jun/2025 10:02:16] "GET /api/redis/ HTTP/1.1" 200 313
+
+***** 27 June, 2025 - 10:04:02 AM '3646 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AJR0-Kj_NFlHK5HGSITeYZV"}}
+***** 27 June, 2025 - 10:04:03 AM '3646 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:04:04 AM '3646 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A9FGPbNyReUJU9QvHroOFXh"}}
+***** 27 June, 2025 - 10:04:04 AM '3646 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:04:05 AM '3629 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135013734780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:04:14 AM '3629 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:04:15 AM '3630 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135013830780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:04:24 AM '3630 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:04:25 AM '3631 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135013956780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:04:34 AM '3631 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:04:35 AM '3632 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135014136780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:04:44 AM '3632 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:04:45 AM '3633 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135014310780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:04:57 AM '3633 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 10:04:57] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+[27/Jun/2025 10:07:22] "GET /api/news/ HTTP/1.1" 200 2933457
+[27/Jun/2025 10:07:23] "GET /api/redis/ HTTP/1.1" 200 280
+
+***** 27 June, 2025 - 10:08:02 AM '3634 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135014778780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:08:11 AM '3634 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:08:12 AM '3635 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135014886780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:08:20 AM '3635 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:08:21 AM '3636 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135015042780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:08:29 AM '3636 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:08:30 AM '3637 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135015132780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:08:37 AM '3637 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:08:37 AM '3638 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135015276780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:08:46 AM '3638 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 10:08:46] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+Internal Server Error: /api/news/scrape/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/News/views/news_view.py", line 98, in get
+    data = Scraping.scrape_all_news()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 948, in scrape_all_news
+    news_ids += Scraping._scrape_all_ew_en_news()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 725, in _scrape_all_ew_en_news
+    news_ids += Scraping.scrape_ew_en_news('books', 'Books')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/server/Helper/scraping.py", line 309, in scrape_ew_en_news
+    if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
+                                        ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'image_url' where it is not associated with a value
+[27/Jun/2025 10:09:03] "GET /api/news/scrape/ HTTP/1.1" 500 110486
+
+***** 27 June, 2025 - 10:12:02 AM '3639 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135015840780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:12:11 AM '3639 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:12:11 AM '3640 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135015930780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:12:21 AM '3640 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:12:21 AM '3641 news id' Start Posting on ==> 'Gemten News'
+/server/Helper/scraping.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 27, 2025 - 10:12:24
+Django version 5.2.3, using settings 'GemtenAi.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+
+[27/Jun/2025 10:12:29] "GET /api/news/ HTTP/1.1" 200 2933684
+[27/Jun/2025 10:12:29] "GET /api/redis/ HTTP/1.1" 200 229
+
+***** 27 June, 2025 - 10:16:02 AM '3644 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135019194780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:16:17 AM '3644 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:16:17 AM '3645 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135019266780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:16:26 AM '3645 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:16:26 AM '3646 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135019350780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:16:35 AM '3646 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 3 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 10:16:35] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+[27/Jun/2025 10:17:35] "GET /api/news/ HTTP/1.1" 200 2933684
+[27/Jun/2025 10:17:35] "GET /api/redis/ HTTP/1.1" 200 215
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+&&& saving news &&&
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+*** skipping for image ***
+&&& saving news &&&
+*** skipping for image ***
+&&& saving news &&&
+*** skipping for image ***
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+*** skipping for image ***
+&&& saving news &&&
+&&& saving news &&&
+*** skipping for image ***
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+*** skipping for image ***
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+&&& saving news &&&
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+&&& saving news &&&
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+&&& saving news &&&
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+&&& saving news &&&
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+&&& saving news &&&
+Error parsing a card: 'NoneType' object is not subscriptable
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+Error parsing a card: 'NoneType' object is not subscriptable
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+&&& saving news &&&
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[27/Jun/2025 10:19:42] "GET /api/news/scrape/ HTTP/1.1" 200 126
+
+***** 27 June, 2025 - 10:20:02 AM '3791 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AwuvzBMGtwTBJ00WB-QiieT"}}
+***** 27 June, 2025 - 10:20:03 AM '3791 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:20:03 AM '3792 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AJ2tce3KOMZj3lFJ-762JuY"}}
+***** 27 June, 2025 - 10:20:04 AM '3792 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:20:05 AM '3793 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AJGzM73I8CU6HxGOCBz5iHv"}}
+***** 27 June, 2025 - 10:20:05 AM '3793 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:20:06 AM '3647 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AkoFvL2FoKQnP0Dq0zxA-ln"}}
+***** 27 June, 2025 - 10:20:07 AM '3647 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:20:07 AM '3648 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"APJRbC8b4IAXMCPgytqyS-X"}}
+***** 27 June, 2025 - 10:20:08 AM '3648 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:20:09 AM '3764 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AewCFfllswiiVmwQfhel_rk"}}
+***** 27 June, 2025 - 10:20:09 AM '3764 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:20:10 AM '3765 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Agh2jgvOeNoS5NUFiuQjIrS"}}
+***** 27 June, 2025 - 10:20:11 AM '3765 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:20:12 AM '3766 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Af15fbq5xdDmoQ8cDjhsyyL"}}
+***** 27 June, 2025 - 10:20:12 AM '3766 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:20:13 AM '3767 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Alb9ekCtQjGDBeSfduOsoVZ"}}
+***** 27 June, 2025 - 10:20:13 AM '3767 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:20:14 AM '3768 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AEQPjrSIUar5Ly-rGrNj46a"}}
+***** 27 June, 2025 - 10:20:15 AM '3768 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:20:16 AM '3774 news id' Start Posting on ==> 'Gemten Terabyte'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ASXouhxNq4EHL9JWUe85mX8"}}
+***** 27 June, 2025 - 10:20:16 AM '3774 news id' End Posting on ==> 'Gemten Terabyte'
+
+
+***** 27 June, 2025 - 10:20:17 AM '3775 news id' Start Posting on ==> 'Gemten Terabyte'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AtLcOwsuMuZz0Y7b44ScFP1"}}
+***** 27 June, 2025 - 10:20:17 AM '3775 news id' End Posting on ==> 'Gemten Terabyte'
+
+
+***** 27 June, 2025 - 10:20:18 AM '3737 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AAXCmYhmatx8_E1l4tgtXao"}}
+***** 27 June, 2025 - 10:20:19 AM '3737 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:20:19 AM '3738 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ar5QeVt4Ha6yhJcitOkpH7y"}}
+***** 27 June, 2025 - 10:20:20 AM '3738 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:20:21 AM '3739 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AVHOZ6907yVm8Mc1hNLcoLm"}}
+***** 27 June, 2025 - 10:20:21 AM '3739 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:20:22 AM '3740 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A-c62fqAWenWnh3jRxskDS3"}}
+***** 27 June, 2025 - 10:20:23 AM '3740 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:20:23 AM '3741 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ApXImgT52D6bhoaEqAjs73I"}}
+***** 27 June, 2025 - 10:20:24 AM '3741 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:20:25 AM '3742 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AxCYjtL3c1bjoQ1ys8duZP4"}}
+***** 27 June, 2025 - 10:20:25 AM '3742 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:20:26 AM '3743 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AZ7UHEeQmMUdJJvhecKkJXm"}}
+***** 27 June, 2025 - 10:20:26 AM '3743 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:20:27 AM '3775 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AjWFWxgYzgmztNSJzdAu8oA"}}
+***** 27 June, 2025 - 10:20:28 AM '3775 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:20:28 AM '3774 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ATIAm173G54l37U4BfdRFeF"}}
+***** 27 June, 2025 - 10:20:29 AM '3774 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:20:29 AM '3647 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Abi9jwgEYUp9pje-Z3S8FfO"}}
+***** 27 June, 2025 - 10:20:30 AM '3647 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:20:30 AM '3647 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135020088780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:20:52 AM '3647 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:20:52 AM '3648 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135020178780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:21:06 AM '3648 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:21:07 AM '3649 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135020346780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:21:16 AM '3649 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:21:16 AM '3650 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135020466780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:21:25 AM '3650 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:21:25 AM '3651 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135020604780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:21:34 AM '3651 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 10:21:34] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+[27/Jun/2025 10:22:41] "GET /api/news/ HTTP/1.1" 200 3056732
+[27/Jun/2025 10:22:41] "GET /api/redis/ HTTP/1.1" 200 1722
+
+***** 27 June, 2025 - 10:24:02 AM '3649 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AXxYL0NHqyr5iMOAGZEqqql"}}
+***** 27 June, 2025 - 10:24:02 AM '3649 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:24:02 AM '3650 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AtRjI6wKCRWgLW_hXMsA5Sq"}}
+***** 27 June, 2025 - 10:24:03 AM '3650 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:24:03 AM '3651 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AUkVtNNLNuRc9hr0eM61S_9"}}
+***** 27 June, 2025 - 10:24:04 AM '3651 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:24:04 AM '3652 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ab368b2JqXx26ey4qTIk0x2"}}
+***** 27 June, 2025 - 10:24:05 AM '3652 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:24:06 AM '3653 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A-XC5m6qDJ-LTZJcOg9VODk"}}
+***** 27 June, 2025 - 10:24:06 AM '3653 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:24:07 AM '3769 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ABzO7Q72yhVy2CK8Z-wizec"}}
+***** 27 June, 2025 - 10:24:08 AM '3769 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:24:08 AM '3770 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AIwpLzAvz1MWFX9ekY0mlb7"}}
+***** 27 June, 2025 - 10:24:09 AM '3770 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:24:10 AM '3771 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A56XyjLNc3xNDlRU6TVCvY7"}}
+***** 27 June, 2025 - 10:24:10 AM '3771 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:24:11 AM '3772 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AUz6jLpreSpTrmPdKspJlCQ"}}
+***** 27 June, 2025 - 10:24:11 AM '3772 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:24:12 AM '3773 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AD6VhMD9YeGtV2-aarCSPJW"}}
+***** 27 June, 2025 - 10:24:13 AM '3773 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:24:14 AM '3764 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AkeMG9p1tn23VRTn3xQEVT5"}}
+***** 27 June, 2025 - 10:24:14 AM '3764 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:24:15 AM '3765 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AM78rViR3ebEAEUfm0iyyCL"}}
+***** 27 June, 2025 - 10:24:15 AM '3765 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:24:16 AM '3766 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A5tEUBRPd07tkwiizuzSl1d"}}
+***** 27 June, 2025 - 10:24:17 AM '3766 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:24:17 AM '3767 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AIvfPrPhZ717soJOOvuZpsg"}}
+***** 27 June, 2025 - 10:24:18 AM '3767 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:24:19 AM '3768 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AqPKPVkRwOo27L-9SFndLDF"}}
+***** 27 June, 2025 - 10:24:19 AM '3768 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:24:19 AM '3648 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AoTj_YmBkMEYkKZvM4WJVtD"}}
+***** 27 June, 2025 - 10:24:20 AM '3648 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:24:20 AM '3649 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AeaaXpwjVXgWzc3cbfv4PUJ"}}
+***** 27 June, 2025 - 10:24:21 AM '3649 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:24:21 AM '3650 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A7clvn1NQsar2C9464nF4Ih"}}
+***** 27 June, 2025 - 10:24:21 AM '3650 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:24:21 AM '3651 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AhnrUPAPWds03RFA04d6xe3"}}
+***** 27 June, 2025 - 10:24:22 AM '3651 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:24:22 AM '3652 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ai5-FjCtt_dmoHKeGk4t1Xl"}}
+***** 27 June, 2025 - 10:24:22 AM '3652 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:24:22 AM '3652 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135021090780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:24:35 AM '3652 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:24:35 AM '3653 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135021246780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:24:45 AM '3653 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:24:45 AM '3654 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135021384780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:24:55 AM '3654 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:24:56 AM '3655 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135021510780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:25:07 AM '3655 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:25:08 AM '3656 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135021690780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:25:18 AM '3656 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 10:25:18] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+
+******************************************************************************************
+https://khela.com/cricket 200
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+&&& saving news &&&
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+[27/Jun/2025 10:27:47] "GET /api/news/ HTTP/1.1" 200 3058163
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+[27/Jun/2025 10:27:48] "GET /api/redis/ HTTP/1.1" 200 1602
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[27/Jun/2025 10:27:49] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+***** 27 June, 2025 - 10:28:01 AM '3654 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Al1Ra-r7P8Q8M01lGq7zP7c"}}
+***** 27 June, 2025 - 10:28:02 AM '3654 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:28:02 AM '3655 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ANUUP5I2rr_xz5s7FqtWCLS"}}
+***** 27 June, 2025 - 10:28:02 AM '3655 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:28:02 AM '3656 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A4BISd7O4RHgUtkt0ZYQeFx"}}
+***** 27 June, 2025 - 10:28:03 AM '3656 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:28:04 AM '3657 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AWT-Aw4ImHAPygovIXb1M4j"}}
+***** 27 June, 2025 - 10:28:04 AM '3657 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:28:05 AM '3658 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A6AlAG1ldNZsdfcM1sEd1gJ"}}
+***** 27 June, 2025 - 10:28:06 AM '3658 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:28:07 AM '3809 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ASV5zL99KI0p7oPie8iIL1V"}}
+***** 27 June, 2025 - 10:28:07 AM '3809 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:28:08 AM '3810 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AR9wUlgaicomaNOupAC3pZ6"}}
+***** 27 June, 2025 - 10:28:08 AM '3810 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:28:09 AM '3683 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AyJs_PjinSTs2sB1ieVGaVt"}}
+***** 27 June, 2025 - 10:28:10 AM '3683 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:28:11 AM '3684 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AG1DTdayu5a2FTO76kq9HcN"}}
+***** 27 June, 2025 - 10:28:11 AM '3684 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:28:12 AM '3685 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AsNKn-wjy_MVBe_agPm6kUd"}}
+***** 27 June, 2025 - 10:28:13 AM '3685 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:28:13 AM '3769 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AHkhule1qFAG5Dwu4SAnFbK"}}
+***** 27 June, 2025 - 10:28:14 AM '3769 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:28:15 AM '3770 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AuB4fwdoTnnwlklFT4Z-u4Z"}}
+***** 27 June, 2025 - 10:28:15 AM '3770 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:28:16 AM '3771 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AnIt7aOFmvCUASVFaYj4frJ"}}
+***** 27 June, 2025 - 10:28:16 AM '3771 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:28:17 AM '3772 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AJb31Ng4YYyZ8HFCCXt0rBP"}}
+***** 27 June, 2025 - 10:28:18 AM '3772 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:28:18 AM '3773 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AgQ2LKX-zpdj0GrnpxQG7z6"}}
+***** 27 June, 2025 - 10:28:19 AM '3773 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:28:19 AM '3653 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A1-kKr2H8INe1gYW1nHH4mT"}}
+***** 27 June, 2025 - 10:28:20 AM '3653 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:28:20 AM '3654 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AxURun2jBSjSPh4PKb0Hxi4"}}
+***** 27 June, 2025 - 10:28:20 AM '3654 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:28:20 AM '3655 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AALjUoGVouXTZZPPZyB-uG-"}}
+***** 27 June, 2025 - 10:28:21 AM '3655 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:28:21 AM '3656 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AxSfWgTMx0bUcqHxQhpUR1g"}}
+***** 27 June, 2025 - 10:28:21 AM '3656 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:28:21 AM '3657 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AyzgcgQpGpGljmnaPubRXAO"}}
+***** 27 June, 2025 - 10:28:22 AM '3657 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:28:22 AM '3657 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135022206780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:28:33 AM '3657 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:28:33 AM '3658 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135022284780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:28:42 AM '3658 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:28:43 AM '3659 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135022410780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:28:52 AM '3659 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:28:53 AM '3660 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135022560780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:29:07 AM '3660 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:29:08 AM '3661 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135022656780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:29:15 AM '3661 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 10:29:15] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+***** 27 June, 2025 - 10:32:02 AM '3659 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AuPZp5lOnGDOL8HWNXi5wEY"}}
+***** 27 June, 2025 - 10:32:02 AM '3659 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:32:02 AM '3660 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ai-t_XXz3Iu1sbzs4gYlLrZ"}}
+***** 27 June, 2025 - 10:32:03 AM '3660 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:32:03 AM '3661 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A3AClZfE9tY69EdmuKNJw5s"}}
+***** 27 June, 2025 - 10:32:03 AM '3661 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:32:04 AM '3662 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AjGi7t1T0ZbSua9cKVTj3sc"}}
+***** 27 June, 2025 - 10:32:04 AM '3662 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:32:05 AM '3663 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A38be9R21oLDLrcyKZVVzHD"}}
+***** 27 June, 2025 - 10:32:06 AM '3663 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:32:06 AM '3686 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ACGzKrCx2F66CIfs01Cw0MO"}}
+***** 27 June, 2025 - 10:32:07 AM '3686 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:32:08 AM '3687 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A5r_EnBBexqZNaRzpJg8g-j"}}
+***** 27 June, 2025 - 10:32:08 AM '3687 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:32:09 AM '3688 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ABMGBFY7k2VWrid5_v2-Dsx"}}
+***** 27 June, 2025 - 10:32:09 AM '3688 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:32:10 AM '3689 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A1sy7VDhIaMA3r81OcPxOJy"}}
+***** 27 June, 2025 - 10:32:10 AM '3689 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:32:11 AM '3690 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A9yMeTHxVMcE75rwHr9q82t"}}
+***** 27 June, 2025 - 10:32:12 AM '3690 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:32:12 AM '3809 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AasV8DnP81FhEjbMKOtUA3I"}}
+***** 27 June, 2025 - 10:32:13 AM '3809 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:32:14 AM '3810 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AQT1c1NSy5OKyNXL-D7_Gl2"}}
+***** 27 June, 2025 - 10:32:14 AM '3810 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:32:15 AM '3683 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AEeKTwrF_70_u4yNZBvdFFi"}}
+***** 27 June, 2025 - 10:32:15 AM '3683 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:32:16 AM '3684 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ARVQdr2Ih-UuQ2FNRzjAJpI"}}
+***** 27 June, 2025 - 10:32:16 AM '3684 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:32:17 AM '3685 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Ac5Ll67cYiQN9v2ytHNOAVt"}}
+***** 27 June, 2025 - 10:32:18 AM '3685 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:32:18 AM '3658 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ArS3lyiSfYCfIECsU5h9ek4"}}
+***** 27 June, 2025 - 10:32:18 AM '3658 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:32:18 AM '3659 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Aa0aUxj-qbKKov8sVnWVcRw"}}
+***** 27 June, 2025 - 10:32:18 AM '3659 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:32:18 AM '3660 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A17BOHgH9uIWMAIBWrKgnAh"}}
+***** 27 June, 2025 - 10:32:19 AM '3660 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:32:19 AM '3661 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AFSiqoAmHOo_VR-m6QH9JrR"}}
+***** 27 June, 2025 - 10:32:19 AM '3661 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:32:19 AM '3662 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A4wb2sCKwSVRjZ3smX6NZCX"}}
+***** 27 June, 2025 - 10:32:20 AM '3662 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:32:20 AM '3662 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135023046780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:32:28 AM '3662 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:32:28 AM '3663 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135023118780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:32:38 AM '3663 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:32:38 AM '3664 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135023226780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:32:48 AM '3664 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:32:49 AM '3665 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135023352780855
+
+[27/Jun/2025 10:32:53] "GET /api/news/ HTTP/1.1" 200 3059833
+[27/Jun/2025 10:32:54] "GET /api/redis/ HTTP/1.1" 200 1352
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:32:56 AM '3665 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:32:57 AM '3666 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135023490780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:33:08 AM '3666 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 10:33:08] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+ )()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all news...
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all pets news...
+
+***** 27 June, 2025 - 10:36:02 AM '3664 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A0u-52ZK0E0sx7vaI4zPEcb"}}
+***** 27 June, 2025 - 10:36:02 AM '3664 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:36:02 AM '3665 news id' Start Posting on ==> 'Gemten ShowBiz'
+
+******************************************************************************************
+https://www.bbc.com/news/topics/c51grdzv08yt 200
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ACrt8j3RJpslNUVe1qTWPdz"}}
+***** 27 June, 2025 - 10:36:03 AM '3665 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+***** 27 June, 2025 - 10:36:03 AM '3666 news id' Start Posting on ==> 'Gemten ShowBiz'
+
+******************************************************************************************
+https://khela.com/cricket 200
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AWhSoTKh-ZpnIarZg5fa7JX"}}
+***** 27 June, 2025 - 10:36:03 AM '3666 news id' End Posting on ==> 'Gemten ShowBiz'
+
+
+******************************************************************************************
+https://khela.com/football 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all ew news...
+
+******************************************************************************************
+Main Page: https://ew.com/books/
+*** skipping for image ***
+
+***** 27 June, 2025 - 10:36:04 AM '3667 news id' Start Posting on ==> 'Gemten ShowBiz'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A-gpG7BG5lbLXZpiir_S8Z4"}}
+***** 27 June, 2025 - 10:36:04 AM '3667 news id' End Posting on ==> 'Gemten ShowBiz'
+
+*** skipping for image ***
+
+***** 27 June, 2025 - 10:36:05 AM '3668 news id' Start Posting on ==> 'Gemten ShowBiz'
+*** skipping for image ***
+*** skipping for image ***
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AIlxomSzsfSy0t1bDsj1YnR"}}
+***** 27 June, 2025 - 10:36:06 AM '3668 news id' End Posting on ==> 'Gemten ShowBiz'
+
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/music/
+
+***** 27 June, 2025 - 10:36:06 AM '3691 news id' Start Posting on ==> 'Gemten Esports'
+*** skipping for image ***
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AF1sceGMCT_EuPxTK6yFkkL"}}
+***** 27 June, 2025 - 10:36:07 AM '3691 news id' End Posting on ==> 'Gemten Esports'
+
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/movies/
+
+***** 27 June, 2025 - 10:36:08 AM '3692 news id' Start Posting on ==> 'Gemten Esports'
+*** skipping for image ***
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AadiKQ7MAMfO_mPQA_z5aGN"}}
+***** 27 June, 2025 - 10:36:08 AM '3692 news id' End Posting on ==> 'Gemten Esports'
+
+*** skipping for image ***
+*** skipping for image ***
+
+******************************************************************************************
+Main Page: https://ew.com/celebrity/
+
+***** 27 June, 2025 - 10:36:09 AM '3693 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Akj1-jx-ED-ka53Z2PWh_HV"}}
+***** 27 June, 2025 - 10:36:09 AM '3693 news id' End Posting on ==> 'Gemten Esports'
+
+*** skipping for image ***
+*** skipping for image ***
+*** skipping for image ***
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+
+***** 27 June, 2025 - 10:36:10 AM '3694 news id' Start Posting on ==> 'Gemten Esports'
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bdcrictime news...
+https://bn.bdcrictime.com/news 403
+Request failed with status code 403
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all jagonews24 news...
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"A3VF0d4_KbMf8AqdoLvw0dK"}}
+***** 27 June, 2025 - 10:36:11 AM '3694 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:36:12 AM '3700 news id' Start Posting on ==> 'Gemten Esports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AXUZfqYqd0zDiuUrT18VCaG"}}
+***** 27 June, 2025 - 10:36:12 AM '3700 news id' End Posting on ==> 'Gemten Esports'
+
+
+***** 27 June, 2025 - 10:36:13 AM '3686 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AeJ3mOj5CcEN2S5tRTqmv2X"}}
+***** 27 June, 2025 - 10:36:13 AM '3686 news id' End Posting on ==> 'Gemten Sports'
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bbc bangla news...
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cg7265yyxn1t 200
+
+***** 27 June, 2025 - 10:36:14 AM '3687 news id' Start Posting on ==> 'Gemten Sports'
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cjgn7233zk5t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c907347rezkt 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cdr56g57y01t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/cqywj91rkg6t 200
+
+******************************************************************************************
+https://www.bbc.com/bengali/topics/c8y94k95v52t 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star news...
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Aeihgb8OgqJAO0Bg1R2PAVO"}}
+***** 27 June, 2025 - 10:36:14 AM '3687 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:36:15 AM '3688 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AW1b_QVhr2SV0a0ODQLihVT"}}
+***** 27 June, 2025 - 10:36:16 AM '3688 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:36:16 AM '3689 news id' Start Posting on ==> 'Gemten Sports'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"ASVKNBeOn47tnwOqaLiaxzC"}}
+***** 27 June, 2025 - 10:36:17 AM '3689 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:36:18 AM '3690 news id' Start Posting on ==> 'Gemten Sports'
+
+******************************************************************************************
+https://bangla.thedailystar.net/health 200
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"As-t5KvqWnF25GawAgyKP-N"}}
+***** 27 June, 2025 - 10:36:18 AM '3690 news id' End Posting on ==> 'Gemten Sports'
+
+
+***** 27 June, 2025 - 10:36:19 AM '3790 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AdBhCDlPcesDn-F5dZe1nEz"}}
+***** 27 June, 2025 - 10:36:19 AM '3790 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:36:19 AM '3663 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AYXFM1kkWT5nqUDUBJlDL52"}}
+***** 27 June, 2025 - 10:36:20 AM '3663 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:36:20 AM '3792 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AcQ9UV1vEcIXZhDhUWHO_Ip"}}
+***** 27 June, 2025 - 10:36:20 AM '3792 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:36:20 AM '3793 news id' Start Posting on ==> 'Gemten Global'
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"Aa8mq7VpZEy0tfRX9kGDw0S"}}
+***** 27 June, 2025 - 10:36:21 AM '3793 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:36:21 AM '3664 news id' Start Posting on ==> 'Gemten Global'
+
+******************************************************************************************
+https://bangla.thedailystar.net/business 200
+❌ Failed to post Local Image.
+📄 Status Code: 400
+📄 Response: {"error":{"message":"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.","type":"OAuthException","code":190,"error_subcode":460,"fbtrace_id":"AnXKC_xFkOmaTDBEyUrXc2Q"}}
+***** 27 June, 2025 - 10:36:21 AM '3664 news id' End Posting on ==> 'Gemten Global'
+
+
+***** 27 June, 2025 - 10:36:21 AM '3667 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://bangla.thedailystar.net/abroad 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/sports 200
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135023940780855
+
+******************************************************************************************
+https://bangla.thedailystar.net/tech-startup 200
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:36:29 AM '3667 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:36:29 AM '3668 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://bangla.thedailystar.net/youth/education 200
+
+******************************************************************************************
+https://bangla.thedailystar.net/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all bd pratidin news...
+
+******************************************************************************************
+https://www.bd-pratidin.com/islam 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/economy 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/national 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/health-tips 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/city-news 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/sports 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/science 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/minister-spake 200
+
+******************************************************************************************
+https://www.bd-pratidin.com/entertainment 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all shikshabarta news...
+
+******************************************************************************************
+https://shikshabarta.com/category/চাকরি/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/স্পোর্টস/ 200
+*** skipping *** for image
+
+******************************************************************************************
+https://shikshabarta.com/category/কলেজ/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাদরাসা/ 200
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135024054780855
+
+******************************************************************************************
+https://shikshabarta.com/category/পড়ালেখা/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/বিনোদন/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/মাধ্যমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/প্রাথমিক/ 200
+
+******************************************************************************************
+https://shikshabarta.com/category/কারিগরি/ 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all daily star english news...
+
+******************************************************************************************
+https://www.thedailystar.net/business 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/sports 200
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:36:42 AM '3668 news id' End Posting on ==> 'Gemten News'
+
+
+******************************************************************************************
+https://www.thedailystar.net/tech-startup 200
+
+***** 27 June, 2025 - 10:36:43 AM '3669 news id' Start Posting on ==> 'Gemten News'
+
+******************************************************************************************
+https://www.thedailystar.net/news/bangladesh 200
+Error parsing a card: 'NoneType' object is not subscriptable
+
+******************************************************************************************
+https://www.thedailystar.net/entertainment 200
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+Error parsing a card: 'NoneType' object is not subscriptable
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all dainikshiksha news...
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/2/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/4/paginate-1.json 200
+&&& saving news &&&
+&&& saving news &&&
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/6/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/7/paginate-1.json 200
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135024252780855
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/14/paginate-1.json 200
+
+******************************************************************************************
+https://www.dainikshiksha.com/data/bn/category/17/paginate-1.json 200
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scraping all lawyersclubbangladesh news...
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/পড়াশোনা/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/বিশেষ-সংবাদ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/আদালত-প্রাঙ্গণ/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/দৈনন্দিন-জীবনে-আইন/ 200
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/সংসদ-ও-মন্ত্রী-সভা/ 200
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:36:54 AM '3669 news id' End Posting on ==> 'Gemten News'
+
+
+******************************************************************************************
+https://lawyersclubbangladesh.com/category/জাতীয়/ 200
+
+
+Done, Scraping all news...
+[27/Jun/2025 10:36:54] "GET /api/news/scrape/ HTTP/1.1" 200 122
+
+***** 27 June, 2025 - 10:36:55 AM '3670 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135024396780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:37:05 AM '3670 news id' End Posting on ==> 'Gemten News'
+
+
+***** 27 June, 2025 - 10:37:05 AM '3671 news id' Start Posting on ==> 'Gemten News'
+✅ Local Image posted successfully!
+📌 PostUrl: https://www.facebook.com/571480596045760_122135024498780855
+✅ Comment posted successfully!
+***** 27 June, 2025 - 10:37:13 AM '3671 news id' End Posting on ==> 'Gemten News'
+
+🐣 Just dropped 5 shiny new news posts on 😍 All Gemten Pages! 🎉✨
+
+[27/Jun/2025 10:37:13] "GET /api/post/to/gemten/facebook/ HTTP/1.1" 200 84
+
+[27/Jun/2025 10:38:00] "GET /api/news/ HTTP/1.1" 200 3062458
+[27/Jun/2025 10:38:00] "GET /api/redis/ HTTP/1.1" 200 1237
