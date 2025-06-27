@@ -40,6 +40,7 @@ class TestApiView(APIView):
         #     print(page_name, page_id, cache.get(page_id, []))
         
         News.remove_all_today_news()
+        # Scraping.scrape_all_shikshabarta_news()
         # GemtenPostHelper.process_and_publish_news_to_all_pages()
 
 

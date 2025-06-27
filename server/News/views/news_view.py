@@ -18,16 +18,16 @@ from Helper.response import ResponseHelper
 class NewsAPIView(APIView):
     def get(self, request):
         print()
-        print(')(' * 30)
+        # print(')(' * 30)
         # self.redis_test_view()
         # news_ids = cache.get('571480596045760', [])
         # news_ids += [1,3,4,5,2]
         # cache.set('571480596045760', news_ids)
         # cache.delete('571480596045760')
-        GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
-        for pages in GEMTEN_PAGES:
-            msg = f'{pages}: {cache.get(GEMTEN_PAGES[pages], [])}'
-            print(msg)
+        # GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
+        # for pages in GEMTEN_PAGES:
+        #     msg = f'{pages}: {cache.get(GEMTEN_PAGES[pages], [])}'
+        #     print(msg)
             
         start_time = timezone.localtime()
         
@@ -118,19 +118,9 @@ class ClearRedisCache(APIView):
 
 
 class GetRedisCache(APIView):
-    def get_all_page_cache(self):
-        count = 0
-        caches_data = {}
-        GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
-        for name in GEMTEN_PAGES:
-            page_id = GEMTEN_PAGES[name]
-            count += len(cache.get(page_id, []))
-            caches_data[name] = cache.get(page_id, [])
-        return count, caches_data
-
     def get(self, request):
         # cache.set(constants.GEMTEN_NEWS_PAGE_ID, [1, 2, 3, 4, 5])
-        count, caches_data = self.get_all_page_cache()
+        count, caches_data = Helper.get_all_page_cache()
         response = {
             'status': True,
             # 'time': timezone.localtime(),

@@ -2,7 +2,7 @@
 CRONJOBS = [
     
     
-    ('*/7 * * * *', 'Helper.cron.cron_scrape_all_news'),
+    ('*/9 * * * *', 'Helper.cron.cron_scrape_all_news'),
     ('*/4 * * * *', 'Helper.cron.cron_auto_post_news_to_all_pages'),
 
 

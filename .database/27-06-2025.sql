@@ -3957,12 +3957,12 @@ COPY public."News_template" (id, page_name, page_id, image, metadata, created_at
 --
 
 COPY public."Pages_gemtenpage" (id, page_name, page_id, page_token, created_at, updated_at) FROM stdin;
+4	Gemten News	gAAAAABoWJYLaPsUqUboziFhfmnembMEYd4n_a5m-RL-kXWCf-Ba4ax8M7r2m0-FBKrOTNk1Ki9jxsti-qKinMG5R0C-51LfTw==	gAAAAABoWJYLk3lybB1tMXeJey72KLHUIaU90Rg-SW9DbrK7GHO0ZzbZiGgj-RkPLm9a4dXJFa8LQTtWBmNAw4bS6LK1k2ukqGJgQFe8104hMF4qbEu41IuW_Nc1h6B25FpR_nTtSy66_AGKTO37j7tCM-Br2i1qw1laiQxP89wRC9SWyDzaS3SWXW4vrh8FAaB6dP30rn7OCzinaYyULVkE504iuydH9XDLrX4NBmSdDlnuBCfHr4brBvUlpEeHF7hvlyRsp5UAIZ3xZUiTFE-O3EwlFRT5tc2L-JBVBvSfUnfz349wumsBCDbQiPro2BNnoyW-Gy4AQ1mn0HR9Pn6qADmbzjR2-cNZGWTF7OnDHgf204BZGK4=	2025-06-22 23:47:23.96091+00	2025-06-22 23:47:23.960936+00
 5	Gemten ShowBiz	gAAAAABoWJeUXJCszikm9krBoMlKN67lW1beYKe-a7Bbsl3KSaa80kOotuoPIhrcx2TftD6jC5Og_zwVjTlSdWyE4eZPv-80vg==	gAAAAABoWJeUuYw2vFj9RIw8G70hWDU9bpRNMVf0Tehxz35J1qesQ69cMAoONX5FqLnruGgrZVyNgz0-5Led5UBukSzaRTq-uMkXaEs99Yl8W7VZM3cwyoS6R3yULslwcaFTsINPF9Xd4jEA2HsDizTWX4hKGv_H86fMGOjEmthv547EMOznOsVe1WnmXzIG2ui1nIOoq0hiqe8Q6wpAzDivDO0ik-1LSejYE2UHSvJOXzvW8P-HSwtQsRfJp6XSVdDhVHkWsJT2DrOSucLD7c9aZCzyGQ6N_f6bj1MLTtfTayKKf7e5EDz4rL43aN_8PO_41vYoNg0dNKUhWZUEylBI0r8satQmMO89vrAjz4jTOwruUjzOz1VPF6PCJsfMKBcGAF-U5pxi	2025-06-22 23:53:56.676048+00	2025-06-22 23:53:56.676071+00
 6	Gemten Esports	gAAAAABoWJe57GbxWzWj6nE6csH1tlGe_D90eW3yO3U5BRabJdb2rWOJH54ttv-q_PJ8rlOlF5STiH_umd6z46WRK82TYBh3tA==	gAAAAABoWJe5NXwh4QugfW0X84BkB9QLjjGh12mUYiFKuir_sUTCXGQkP322N5UxV8ZPREBHznMYuH-JTG6mOSOMMHr9FPy4tIVD2dNQ6j6r3F8KPvDPBta3hPZwFckpdiVq9YzmCNZ6u7JK3J2hG-jZZpRY_KnHZlH2sTEBcow1PnA_UhQKs8PJ1t0v5GES9DrCa3Ov7VBdupBTSMUksGVeNjV_8C83sFRZLUKZImj7FssZ9ERXG5mAacbMVlhZ1y3wwaL4xaYBQSE9TgLKIdXa_WH7jJgqH0s3H7Pp_kdwIXbsz-ePV2i69Hg40YlhPlx1-hjHDKmlEgMD43BQTAHsVjWKwj5ovefHYS7UHbfTrO33DPSJNXE=	2025-06-22 23:54:33.545405+00	2025-06-22 23:54:33.545432+00
 7	Gemten Terabyte	gAAAAABoWJfrCZDaAHm76OhnMPhQiLeDPM59V6mtnCqCLm_Ro8krNVL7NMg6kifnFbZU3QIFdrozGvEOVnxbzYnxbMm2vCRjMw==	gAAAAABoWJfrQCj1ocPWQCfMDI0znoaUFYeubD_FyWTse8DJLM-C_mGXziitrBatg9cIRkqNvxjEK_rVsmdoMIgC8IQvgxMsSmT3Ygg35XOISTJZ3YNBNtbTxAcR8cuaXtoDdWhE7CRkwXGP2pgf7Omo3e-aqTMDJ6KXD4pTivYQUEVv4wDtBWybbSMQz3xzswBLYTzvbbuUAS_GC-vdoiTl7bzCA_BLw9XrfocolPPN4yEk4I2ezGM1R9bHPE6-f-NoiwOmBq-cshzISt-weJKx8qMC4-G1XigYRMJ7zGBQ_NZy_2z6YCDbNDlKM7CZYitwtwGVzYSkmGp65aJaQq7CpT7A42X3luQYI09SbGinHJeMcR6WeHiGlhDKHWzkJrpaMy0_ZXnm	2025-06-22 23:55:23.227647+00	2025-06-22 23:55:23.227673+00
 8	Gemten Sports	gAAAAABoWJkdN83MY9ZoSbEK4-2WXCIWfCAkra6qGZ-5QcOhXirsKm1INSpDmmtrCI8AmaMwmoGjJxhDm2cyhEeACqRehhlW4w==	gAAAAABoWJkdxzCwQjdM7d2sxosPR-Twl8jswrOJukyxfF2z5NGRbrX1Rstrg_mq2SvsdGwZC_nsWhqucGtjyO1HELTnW5j599fGXCI2ICnlLYct9HT0ZUG8dA0O5qxessRvvH8d35c84UdwlDEWcBa4DYAoX78C_YapPIxdfuUk61eg2cVqyMC-E2B0Mhq6rm7gcB0jHpsin6MR6I8i-ZvcXxptOX30ji4Dq9HqdASMWPAV-wWbnvBBgrS4vyhtUTrPcAIJCyL7kS9eMnhKqh-2-F035hDuudvRQF7Z5uJdjsdCpGm3GxPsE5dzWmXkJK4k6oqAM_E9AkqqbzPapjYo2y6opMqZPDkHAy30ZPFTVpRXEo7vwyU=	2025-06-23 00:00:29.555447+00	2025-06-23 00:00:29.555472+00
 9	Gemten Global	gAAAAABoWJvF3x4SpNmqicK4T_vHFc4GJdEbYm77ZaYDlzw3pE9RhcDctFB_dHGUdnUiZ6PAKbG3_q4elwwcppAOaeu8XPzbTA==	gAAAAABoWJvFIpsqK8XIRgFUsmSeHneFMKmqLvDh3eJ6TH7I6CRyuvdrcmAhfYcE-qKhFXhkZ0_3gDKYzWAAoUXdhqRyTevwE1B1a1E0M8EkMG8FBst822bDLtHOLp0F512d_F-9VhCaVPDzhXxPwrtxaaTF9NGMqWU33T-1t-L_RlbnldzV1HOgybw8dNMALPIegDeX-ujXH9YHzJWm0mtyaQ9t37qY3fu7CTiYL-KR7eFwuTEZjE3kuvaPIGfh1kSTI_LfUBQsOCTNJa9Kmq98_JEqt9f-snm9avyXBKgfR7qVaRToTaSWbXg8cLZhP7EFaAny_nMyZoGnYWjOGKvkH2c6MMbt1f3wqMuL-HtGRKfth3GEEHc=	2025-06-23 00:11:49.899099+00	2025-06-23 00:11:49.89913+00
-4	Gemten News	gAAAAABoWJYLaPsUqUboziFhfmnembMEYd4n_a5m-RL-kXWCf-Ba4ax8M7r2m0-FBKrOTNk1Ki9jxsti-qKinMG5R0C-51LfTw==	gAAAAABoXg7FSSN9x-RtBQlqjV_94usEHhOVPP7smf8eeoqbl-JJ2M23ntvUpKEZL5KN7NXJJjwfu0fie_mfbaf7Ox8kOmQh5DT44ZAw_lpFNrU_lz5S9la7JoWrQ9kwaoYTpV3ovwTvpWVU2HabeNdiRSFUlOatylyAA-OeUPKMC0avFTE_0RXF5NrCVzBDTy91wV-YcLqU3D5mSSy48eTCWWzeA8No3JGZg291nIAPgcg1jmSuafhpeQEvklOEhV4d5gdrdYR4oaAuLKiqtjXWxtp4S6DwTKgLX_I1LPWbarSttVNP2QMAtenOwKa4qA-AsF1aQPVQ2XUYmXrF0ZrIY6F-5zDN3TguI7u1d0BR-6y5I9SJRLumaCSp1rNgc_meMc1uz9of	2025-06-22 23:47:23.96091+00	2025-06-27 03:23:49.854301+00
 \.
 
 
@@ -4043,7 +4043,7 @@ COPY public.auth_permission (id, name, content_type_id, codename) FROM stdin;
 --
 
 COPY public.auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
-1	pbkdf2_sha256$1000000$HZLQGrWX85iR76pBxYGp3T$zPCA0lBMz+ruNmRKP+5a9NYMzC0NqXBYv8gX8GMILT8=	2025-06-27 03:22:28.687418+00	t	admin			admin@example.com	t	t	2025-06-20 06:33:59.703124+00
+1	pbkdf2_sha256$1000000$HZLQGrWX85iR76pBxYGp3T$zPCA0lBMz+ruNmRKP+5a9NYMzC0NqXBYv8gX8GMILT8=	2025-06-22 23:42:19.940905+00	t	admin			admin@example.com	t	t	2025-06-20 06:33:59.703124+00
 \.
 
 
@@ -4085,7 +4085,6 @@ COPY public.django_admin_log (id, action_time, object_id, object_repr, action_fl
 15	2025-06-22 23:55:23.230623+00	7	Gemten Terabyte	1	[{"added": {}}]	10	1
 16	2025-06-23 00:00:29.582774+00	8	Gemten Sports	1	[{"added": {}}]	10	1
 17	2025-06-23 00:11:49.90235+00	9	Gemten Global	1	[{"added": {}}]	10	1
-18	2025-06-27 03:23:49.857402+00	4	Gemten News	2	[{"changed": {"fields": ["Page token"]}}]	10	1
 \.
 
 
@@ -4143,7 +4142,6 @@ COPY public.django_migrations (id, app, name, applied) FROM stdin;
 COPY public.django_session (session_key, session_data, expire_date) FROM stdin;
 q44nlaox6gzi6kd6ghdfzrebx7r8pe00	.eJxVjEEOwiAQRe_C2pDCMLR16d4zEIYZbNVAUtqV8e7apAvd_vfef6kQt3UKW5MlzKzOyqjT70YxPaTsgO-x3KpOtazLTHpX9EGbvlaW5-Vw_w6m2KZvjQaQ0VpLkjp0I3jw1OcOBrKJMkSE3hvK3HESO3KPhkeXxSWDgn5Q7w_MBTeg:1uSWCO:dZulW_1aT6DCiDSS1vhiwjnMrYEv5oDfWlx6FlkXpoQ	2025-07-04 07:30:08.6499+00
 32ll8m53ztr8itytnnrpfon3fy4pa2e6	.eJxVjEEOwiAQRe_C2pDCMLR16d4zEIYZbNVAUtqV8e7apAvd_vfef6kQt3UKW5MlzKzOyqjT70YxPaTsgO-x3KpOtazLTHpX9EGbvlaW5-Vw_w6m2KZvjQaQ0VpLkjp0I3jw1OcOBrKJMkSE3hvK3HESO3KPhkeXxSWDgn5Q7w_MBTeg:1uTUKJ:HgysVD34wdMFZp59YfotUo_EuS0iQQ0UjBgQF0ax3kA	2025-07-06 23:42:19.947978+00
-roqfot4gj4agqop4fzkwdsf7offy8p6e	.eJxVjEEOwiAQRe_C2pDCMLR16d4zEIYZbNVAUtqV8e7apAvd_vfef6kQt3UKW5MlzKzOyqjT70YxPaTsgO-x3KpOtazLTHpX9EGbvlaW5-Vw_w6m2KZvjQaQ0VpLkjp0I3jw1OcOBrKJMkSE3hvK3HESO3KPhkeXxSWDgn5Q7w_MBTeg:1uUzfY:yVl45e_89GvBagWodoIPw3g0GqenDOfh2mYV4RJWoyE	2025-07-11 03:22:28.692418+00
 \.
 
 
@@ -4151,7 +4149,7 @@ roqfot4gj4agqop4fzkwdsf7offy8p6e	.eJxVjEEOwiAQRe_C2pDCMLR16d4zEIYZbNVAUtqV8e7apA
 -- Name: News_news_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."News_news_id_seq"', 3608, true);
+SELECT pg_catalog.setval('public."News_news_id_seq"', 3603, true);
 
 
 --
@@ -4221,7 +4219,7 @@ SELECT pg_catalog.setval('public.auth_user_user_permissions_id_seq', 1, false);
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.django_admin_log_id_seq', 18, true);
+SELECT pg_catalog.setval('public.django_admin_log_id_seq', 17, true);
 
 
 --

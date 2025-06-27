@@ -64,7 +64,7 @@ class Scraping:
             intro = intro_tag.text.strip() if intro_tag else None
             image_url = img_tag['src']
 
-            if not title or not news_url or News.objects.filter(title=title, url=news_url):
+            if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
                 # # print('*** skipping ***')
                 continue
 
@@ -112,7 +112,7 @@ class Scraping:
             news_url = link_tag['href'] if link_tag else None
             image_url =  Helper.process_jugantor_image_url(img_tag['data-src'])
 
-            if not title or not news_url or News.objects.filter(title=title, url=news_url):
+            if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
                 # # print('*** skipping ***')
                 continue
 
@@ -158,7 +158,7 @@ class Scraping:
             news_url = link_tag['href'] if link_tag else None
             image_url =  Helper.process_bd_protidin_image_url(img_tag['src'])
 
-            if not title or not news_url or News.objects.filter(title=title, url=news_url):
+            if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
                 # # print('*** skipping ***')
                 continue
 
@@ -204,7 +204,7 @@ class Scraping:
             news_url = ref['href']
             image_url = Helper.process_bbc_news_image_url(img['src'])
 
-            if not title or not news_url or News.objects.filter(title=title, url=news_url):
+            if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
                 # # print('*** skipping ***')
                 continue
 
@@ -260,7 +260,7 @@ class Scraping:
             summary_tag = card.select_one("div.entry p")
             summary = summary_tag.text.strip() if summary_tag else ""
 
-            if not title or not news_url or News.objects.filter(title=title, url=news_url):
+            if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
                 # # print('*** skipping ***')
                 continue
 
@@ -306,7 +306,7 @@ class Scraping:
             title = title_tag.text.strip() if title_tag else ""
             news_url = card.get("href", "")
 
-            if not title or not news_url or News.objects.filter(title=title, url=news_url):
+            if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
                 # print('*** skipping ***')
                 continue
 
@@ -391,7 +391,7 @@ class Scraping:
                 news_url = news.get('url', '')
                 image_url = process_image_url(news.get('thumbnail', ''))
 
-                if not title or not news_url or News.objects.filter(title=title, url=news_url):
+                if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
                     # # print('*** skipping ***')
                     continue
                 
@@ -423,7 +423,7 @@ class Scraping:
 
                         title = card.select_one('a').text.strip()
                         news_url = base_url + card.select_one('a')['href']
-                        if not title or not news_url or News.objects.filter(title=title, url=news_url):
+                        if not title or not news_url or not image_url or News.objects.filter(title=title, url=news_url):
                             # # print('*** skipping ***')
                             continue
 

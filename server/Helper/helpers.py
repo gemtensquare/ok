@@ -3,7 +3,7 @@ from django.conf import settings
 from django.utils import timezone
 from django.core.cache import cache
 import os, textwrap, random, time, requests
-from PIL import Image, ImageDraw, ImageEnhance, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFont, ImageFilter
 
 from . import constants
 from Pages.models import GemtenPage
@@ -14,13 +14,23 @@ class Helper:
     def helper():
         pass
 
+    def get_all_page_cache():
+        count = 0
+        caches_data = {}
+        GEMTEN_PAGES = Helper.get_all_GEMTEN_PAGES()
+        for name in GEMTEN_PAGES:
+            page_id = GEMTEN_PAGES[name]
+            count += len(cache.get(page_id, []))
+            caches_data[name] = cache.get(page_id, [])
+        return count, caches_data
+
     def get_all_GEMTEN_PAGES():
         GEMTEN_PAGES = {}
         pages = GemtenPage.objects.all()
         for page in pages:
             GEMTEN_PAGES[page.get_name()] = page.get_id()
-        print('&&&'*30)
-        print(GEMTEN_PAGES)
+        # print('&&&'*30)
+        # print(GEMTEN_PAGES)
         return GEMTEN_PAGES
         
 
@@ -369,6 +379,15 @@ class TemplateHelper:
             new_width = canvas_width
             new_height = int(new_width / bg_ratio)
 
+        # if bg_ratio > canvas_ratio:
+        # # Background is wider → fit by width
+        #     new_width = canvas_width
+        #     new_height = int(canvas_width / bg_ratio)
+        # else:
+        #     # Background is taller → fit by height
+        #     new_height = canvas_height
+        #     new_width = int(canvas_height * bg_ratio)
+
         resized_bg = background_image.resize((new_width, new_height), Image.LANCZOS)
 
         # 🔻 Offset background crop to move image downward (+200px shift)
@@ -376,10 +395,12 @@ class TemplateHelper:
         top = (new_height - canvas_height) // 2 - 850  # ⬅ shift crop down
         # top = max(0, top)  # prevents negative top if image is too short
 
+        # cropped_bg = background_image
         cropped_bg = resized_bg.crop((left, top, left + canvas_width, top + canvas_height))
         enhanced_bg = ImageEnhance.Brightness(cropped_bg).enhance(1.1)
 
         final_image = Image.alpha_composite(enhanced_bg, template_image)
+        # final_image = TemplateHelper.get_final_image_for_testing(background_image, template_image, text, source, is_bangla_news, template)
         draw = ImageDraw.Draw(final_image)
 
         title_color_code = "#8acaff"
@@ -447,6 +468,65 @@ class TemplateHelper:
         news.all_edited_image[template_code] = f"edited_images/{edited_name}"
         news.save()
         return news
+
+
+    def get_final_image_for_testing(background_image, template_image, text, source, is_bangla_news, template=None):
+        font_path = Helper.get_font_path(is_bangla_news)
+        date_font_path = Helper.get_date_and_source_font_path()
+
+        # === CANVAS DIMENSIONS ===
+        canvas_width, canvas_height = 2800, 3500
+
+        # Resize template to canvas
+        template_image = template_image.resize((canvas_width, canvas_height))
+
+        # === STEP 1: Create blurred background that fills canvas ===
+        bg_ratio = background_image.width / background_image.height
+        canvas_ratio = canvas_width / canvas_height
+
+        if bg_ratio > canvas_ratio:
+            new_height = canvas_height
+            new_width = int(bg_ratio * new_height)
+        else:
+            new_width = canvas_width
+            new_height = int(new_width / bg_ratio)
+
+        # Resize and crop blurred background
+        resized_bg = background_image.resize((new_width, new_height), Image.LANCZOS)
+        left = (new_width - canvas_width) // 2
+        top = (new_height - canvas_height) // 2
+        right = left + canvas_width
+        bottom = top + canvas_height
+        blurred_bg = resized_bg.crop((left, top, right, bottom)).filter(ImageFilter.GaussianBlur(radius=20))
+
+        # === STEP 2: Fit full background image (no crop), and paste centered ===
+        if bg_ratio > canvas_ratio:
+            fit_width = canvas_width
+            fit_height = int(canvas_width / bg_ratio)
+        else:
+            fit_height = canvas_height
+            fit_width = int(canvas_height * bg_ratio)
+
+        fitted_bg = background_image.resize((fit_width, fit_height), Image.LANCZOS)
+
+        # Center position
+        paste_x = (canvas_width - fit_width) // 2
+        paste_y = (canvas_height - fit_height) // 2
+
+        # Composite final background: blurred + centered original
+        final_bg = blurred_bg.copy()
+        final_bg.paste(fitted_bg, (paste_x, paste_y))
+
+        # Optional: Brightness adjust
+        enhanced_bg = ImageEnhance.Brightness(final_bg).enhance(1.1)
+
+        # Final: Overlay template
+        final_image = Image.alpha_composite(
+            enhanced_bg.convert("RGBA"),
+            template_image.convert("RGBA")
+        )
+
+        return final_image
 
 
 class GemtenPostHelper:

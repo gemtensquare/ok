@@ -1,4 +1,4 @@
-
+from Helper.helpers import Helper
 
 
 class ResponseHelper:
@@ -34,11 +34,20 @@ class ResponseHelper:
         return response
     
     def get_news_response(serializer):
+        count, caches_data = Helper.get_all_page_cache()
+        cache_response = {
+            # 'status': True,
+            # 'time': timezone.localtime(),
+            'message': "Here's the latest news queue now!",
+            'total_posts_count': count,
+            # 'caches_data': caches_data,
+        }
         response = {
             'status': True,
             'count': len(serializer.data),
             'response_duration': 0,
             'message': f"{len(serializer.data)} news fetched successfully.",
+            'cache_response': cache_response,
             'data': serializer.data,
         }
         return response
