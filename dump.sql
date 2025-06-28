@@ -4813,6 +4813,7 @@ COPY public."News_news" (id, intro, title, url, image_url, source, image, type, 
 4483	বুলাওয়ায়োতে জিম্বাবুয়ের বিপক্ষে শনিবার প্রিটোরিয়াস খেলেন ১৬০ বলে ১৫৩ রানের ইনিংস। সেঞ্চুরির সময় তার বয়স ১৯ বছর ৯৩ দিন।	৬১ বছর পুরনো রেকর্ড ভেঙে দিলেন প্রোটিয়া তরুণ প্রিটোরিয়াস	https://bangla.thedailystar.net//sports/cricket/news-682666	https://tds-images-bn.thedailystar.net/sites/default/files/styles/very_big_1/public/images/2025/06/28/untitled.jpg	bangla.thedailystar.net	news_images/1751117781_29472.jpg	bn	Sports	t	{"template1": "edited_images/1751117781_29472_template1.jpg", "template7": "edited_images/1751117781_29472_template7.jpg"}	2025-06-28 13:36:21.503231+00	2025-06-28 13:40:05.35585+00
 4485	At an inception workshop on June 26, 2025, in Dhaka -- supported by the World Bank and coordinated by APCU under the PARTNER programme -- key stakeholders gathered to chart implementation strategies	BADC, IRRI launch digital seed forecasting tool	https://www.thedailystar.net//business/organisation-news/press-releases/news/badc-irri-launch-digital-seed-forecasting-tool-3927761	https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/media/api_images/2025/06/28/IRRI-PR.jpg	thedailystar.net	news_images/1751117797_15584.jpg	en	Business	t	{"template1": "edited_images/1751117797_15584_template1.jpg"}	2025-06-28 13:36:37.641016+00	2025-06-28 13:40:39.317554+00
 4486	He was born on June 28, 1940, to parents Dula Miah Sawdagar and Sufia Khatun in Bathua village of Hathazari upazila of Chattogram	Yunus turns 85	https://www.thedailystar.net//news/bangladesh/news/yunus-turns-85-3927756	https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/images/2025/05/27/yunus.jpg	thedailystar.net	news_images/1751117801_5046.jpg	en	Bangladesh	t	{"template1": "edited_images/1751117801_5046_template1.jpg"}	2025-06-28 13:36:41.72529+00	2025-06-28 13:40:51.338723+00
+4668		ঢাকায় বাফুফের ট্রায়ালে ১৪ দেশের ৫২ তরুণ	https://www.bd-pratidin.com/sports/2025/06/29/1131095	https://cdn.bd-pratidin.com/public/news_images/2025/06/29/1751135676-98eddf6d7e10233a4f63f406ebc05717.jpg	bd-pratidin.com	news_images/1751147133_76608.jpg	bn	Sports	t	{"template1": "edited_images/1751147133_76608_template1.jpg"}	2025-06-28 21:45:33.072723+00	2025-06-28 21:48:02.917064+00
 4487	আদালতের আদেশ যথাসময়ে প্রেরণে সুপ্রিম কোর্টের নির্দেশনা জারি	আদালতের আদেশ যথাসময়ে প্রেরণে সুপ্রিম কোর্টের নির্দেশনা জারি	https://lawyersclubbangladesh.com/2025/06/28/high-court-order-implementation-guideline-2025/	https://lawyersclubbangladesh.com/wp-content/uploads/2025/01/sc-.jpg	lawyersclubbangladesh.com	news_images/1751117808_27678.jpg	bn	Education	t	{"template1": "edited_images/1751117808_27678_template1.jpg"}	2025-06-28 13:36:48.533982+00	2025-06-28 13:44:02.685807+00
 4488	Spain, Italy and France are among the countries issuing warnings to protect health and stop wildfires.	Southern Europe swelters as heatwave spreads	https://www.bbc.com/news/articles/c5y74nv1zqpo	https://ichef.bbci.co.uk/news/999/cpsprodpb/443f/live/33dcd7d0-540b-11f0-a2ff-17a82c2e8bc4.png.webp	bbc.com	news_images/1751118325_27674.jpg	en	News	t	{"template1": "edited_images/1751118325_27674_template1.jpg"}	2025-06-28 13:45:25.76226+00	2025-06-28 13:48:02.717503+00
 4489	Israel's prime minister may be contemplating an early election, but he still faces corruption charges.	Netanyahu claims victory over Iran – but polling shows many Israelis don't trust him	https://www.bbc.com/news/articles/cvgnp2l2vj9o	https://ichef.bbci.co.uk/news/999/cpsprodpb/2b1e/live/1134ba40-5415-11f0-809b-99de38e758cf.png.webp	bbc.com	news_images/1751118326_30783.jpg	en	News	t	{"template1": "edited_images/1751118326_30783_template1.jpg"}	2025-06-28 13:45:26.068727+00	2025-06-28 13:48:03.692755+00
@@ -4989,6 +4990,14 @@ COPY public."News_news" (id, intro, title, url, image_url, source, image, type, 
 4660	Follow live as Chelsea face Benfica in the last 16 at the Club World Cup.	Club World Cup: Chelsea goalless against Benfica in last 16	https://www.bbc.comhttps://www.bbc.com/sport/football/live/c0rvz95exd4t	https://ichef.bbci.co.uk/ace/standard/999/cpsprodpb/95d7/live/4c90d550-545c-11f0-b4be-8f7caf53b80c.jpg.webp	bbc.com	news_images/1751142986_34621.jpg	en	News	t	{"template1": "edited_images/1751142986_34621_template1.jpg"}	2025-06-28 20:36:26.231015+00	2025-06-28 20:40:03.107086+00
 4662	Joshua Jackson reunites with his Mighty Ducks costar Marguerite Moreau at the 2025 NHL Draft	Joshua Jackson reunites with his Mighty Ducks costar Marguerite Moreau at the 2025 NHL Draft	https://ew.com/joshua-jackson-mighty-ducks-reunion-with-costar-marguerite-moreau-2025-nhl-draft-11763160	https://ew.com/thmb/2magio3xfH8xQn3XxLwjCFjJBaA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Marguerite-Moreau-Joshua-Jackson-AnaheimDucks-02-062825-72899585e4d4485e8b1123a90a6314bf.jpg	ew.com	news_images/1751144047_11032.jpg	en	Entertainment	t	{"template1": "edited_images/1751144047_11032_template1.jpg"}	2025-06-28 20:54:07.761629+00	2025-06-28 20:56:02.452134+00
 4663	Follow live as England face Germany in the European Under-21 Championship final.	England v Germany goes to extra time in tense Euro U21s final	https://www.bbc.comhttps://www.bbc.com/sport/football/live/cz6g18dz2dpt	https://ichef.bbci.co.uk/ace/standard/999/cpsprodpb/de20/live/7411ca20-545d-11f0-a2ff-17a82c2e8bc4.jpg.webp	bbc.com	news_images/1751144435_42513.jpg	en	News	t	{"template1": "edited_images/1751144435_42513_template1.jpg"}	2025-06-28 21:00:35.736635+00	2025-06-28 21:04:02.463722+00
+4665	Follow live as England face Germany in the European Under-21 Championship final.	England 3-2 up against Germany in extra time of thrilling Euro U21s final	https://www.bbc.comhttps://www.bbc.com/sport/football/live/cz6g18dz2dpt	https://ichef.bbci.co.uk/ace/standard/999/cpsprodpb/a1ce/live/08210590-5464-11f0-b4be-8f7caf53b80c.jpg.webp	bbc.com	news_images/1751146046_79750.jpg	en	News	t	{"template1": "edited_images/1751146046_79750_template1.jpg"}	2025-06-28 21:27:26.95222+00	2025-06-28 21:28:03.160485+00
+4664	Follow live as England face Germany in the European Under-21 Championship final.	Rowe header puts England 3-2 up against Germany in extra time of Euro U21s final	https://www.bbc.comhttps://www.bbc.com/sport/football/live/cz6g18dz2dpt	https://ichef.bbci.co.uk/ace/standard/999/cpsprodpb/de20/live/7411ca20-545d-11f0-a2ff-17a82c2e8bc4.jpg.webp	bbc.com	news_images/1751144851_7780.jpg	en	News	t	{"template1": "edited_images/1751144851_7780_template1.jpg"}	2025-06-28 21:07:31.618926+00	2025-06-28 21:08:03.358564+00
+4667	Follow live as Chelsea face Benfica in the last 16 at the Club World Cup.	Club World Cup: James free-kick puts Chelsea in front against Benfica in last 16	https://www.bbc.comhttps://www.bbc.com/sport/football/live/c0rvz95exd4t	https://ichef.bbci.co.uk/ace/standard/999/cpsprodpb/95d7/live/4c90d550-545c-11f0-b4be-8f7caf53b80c.jpg.webp	bbc.com	news_images/1751146594_1018.jpg	en	News	t	{"template1": "edited_images/1751146594_1018_template1.jpg"}	2025-06-28 21:36:34.580282+00	2025-06-28 21:40:03.580688+00
+4666	Follow reaction as Jonathan Rowe's extra-time goal gives England victory over Germany in the European Under-21 Championship final.	England defend Euro U21s title with dramatic extra-time win over Germany - reaction	https://www.bbc.comhttps://www.bbc.com/sport/football/live/cz6g18dz2dpt	https://ichef.bbci.co.uk/ace/standard/999/cpsprodpb/a1ce/live/08210590-5464-11f0-b4be-8f7caf53b80c.jpg.webp	bbc.com	news_images/1751146593_33407.jpg	en	News	t	{"template1": "edited_images/1751146593_33407_template1.jpg"}	2025-06-28 21:36:33.907216+00	2025-06-28 21:40:02.60037+00
+4669	Follow reaction as Jonathan Rowe's extra-time goal gives England victory over Germany in the European Under-21 Championship final.	England retain Euro U21s title with dramatic extra-time win over Germany - reaction	https://www.bbc.comhttps://www.bbc.com/sport/football/live/cz6g18dz2dpt	https://ichef.bbci.co.uk/ace/standard/999/cpsprodpb/a1ce/live/08210590-5464-11f0-b4be-8f7caf53b80c.jpg.webp	bbc.com	news_images/1751147674_82866.jpg	en	News	t	{"template1": "edited_images/1751147674_82866_template1.jpg"}	2025-06-28 21:54:34.943003+00	2025-06-28 21:56:02.909515+00
+4670		Govt looks to navy to run New Mooring depot for now	https://www.thedailystar.net//news/bangladesh/news/govt-looks-navy-run-new-mooring-depot-now-3927786	https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/feature/images/ctg_port_11.jpg	thedailystar.net	news_images/1751147679_60820.jpg	en	Bangladesh	t	{"template1": "edited_images/1751147679_60820_template1.jpg"}	2025-06-28 21:54:39.166863+00	2025-06-28 21:56:11.38085+00
+4671	Follow live as Chelsea face Benfica in the last 16 at the Club World Cup.	Club World Cup: Chelsea 1-0 Benfica halted on 86 minutes with storm looming - follow updates	https://www.bbc.comhttps://www.bbc.com/sport/football/live/c0rvz95exd4t	https://ichef.bbci.co.uk/ace/standard/999/cpsprodpb/3340/live/d3af6fa0-5467-11f0-8485-7bd50fa63665.jpg.webp	bbc.com	news_images/1751148031_57985.jpg	en	News	t	{"template1": "edited_images/1751148031_57985_template1.jpg"}	2025-06-28 22:00:31.662794+00	2025-06-28 22:04:03.149637+00
+4672	Aziz Al Kaiser, a business leader and long-serving member of North South University’s Board of Trustees, has been elected its new chairman, succeeding Azim Uddin Ahmed.	Aziz Al Kaiser new NSU chairman	https://www.thedailystar.net//news/bangladesh/news/aziz-al-kaiser-new-nsu-chairman-3928026	https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/images/2025/06/29/aziz-al-kaiser-nsu-chairman.jpg	thedailystar.net	news_images/1751148039_29214.jpg	en	Bangladesh	t	{"template1": "edited_images/1751148039_29214_template1.jpg"}	2025-06-28 22:00:39.531727+00	2025-06-28 22:04:04.220617+00
 \.
 
 
@@ -5167,27 +5176,27 @@ COPY public.django_content_type (id, app_label, model) FROM stdin;
 --
 
 COPY public.django_migrations (id, app, name, applied) FROM stdin;
-1	News	0001_initial	2025-06-28 15:11:58.875778+00
-2	Pages	0001_initial	2025-06-28 15:11:58.882344+00
-3	TestApp	0001_initial	2025-06-28 15:11:58.888186+00
-4	contenttypes	0001_initial	2025-06-28 15:11:58.894681+00
-5	auth	0001_initial	2025-06-28 15:11:58.953337+00
-6	admin	0001_initial	2025-06-28 15:11:58.972383+00
-7	admin	0002_logentry_remove_auto_add	2025-06-28 15:11:58.979323+00
-8	admin	0003_logentry_add_action_flag_choices	2025-06-28 15:11:58.985738+00
-9	contenttypes	0002_remove_content_type_name	2025-06-28 15:11:59.004364+00
-10	auth	0002_alter_permission_name_max_length	2025-06-28 15:11:59.042321+00
-11	auth	0003_alter_user_email_max_length	2025-06-28 15:11:59.049933+00
-12	auth	0004_alter_user_username_opts	2025-06-28 15:11:59.056701+00
-13	auth	0005_alter_user_last_login_null	2025-06-28 15:11:59.063898+00
-14	auth	0006_require_contenttypes_0002	2025-06-28 15:11:59.064872+00
-15	auth	0007_alter_validators_add_error_messages	2025-06-28 15:11:59.071484+00
-16	auth	0008_alter_user_username_max_length	2025-06-28 15:11:59.081938+00
-17	auth	0009_alter_user_last_name_max_length	2025-06-28 15:11:59.089112+00
-18	auth	0010_alter_group_name_max_length	2025-06-28 15:11:59.097388+00
-19	auth	0011_update_proxy_permissions	2025-06-28 15:11:59.1104+00
-20	auth	0012_alter_user_first_name_max_length	2025-06-28 15:11:59.117417+00
-21	sessions	0001_initial	2025-06-28 15:11:59.126173+00
+1	News	0001_initial	2025-06-28 21:06:49.62254+00
+2	Pages	0001_initial	2025-06-28 21:06:49.627749+00
+3	TestApp	0001_initial	2025-06-28 21:06:49.63248+00
+4	contenttypes	0001_initial	2025-06-28 21:06:49.638169+00
+5	auth	0001_initial	2025-06-28 21:06:49.685222+00
+6	admin	0001_initial	2025-06-28 21:06:49.702007+00
+7	admin	0002_logentry_remove_auto_add	2025-06-28 21:06:49.708917+00
+8	admin	0003_logentry_add_action_flag_choices	2025-06-28 21:06:49.718226+00
+9	contenttypes	0002_remove_content_type_name	2025-06-28 21:06:49.736839+00
+10	auth	0002_alter_permission_name_max_length	2025-06-28 21:06:49.77243+00
+11	auth	0003_alter_user_email_max_length	2025-06-28 21:06:49.779197+00
+12	auth	0004_alter_user_username_opts	2025-06-28 21:06:49.785374+00
+13	auth	0005_alter_user_last_login_null	2025-06-28 21:06:49.79208+00
+14	auth	0006_require_contenttypes_0002	2025-06-28 21:06:49.792936+00
+15	auth	0007_alter_validators_add_error_messages	2025-06-28 21:06:49.799066+00
+16	auth	0008_alter_user_username_max_length	2025-06-28 21:06:49.808907+00
+17	auth	0009_alter_user_last_name_max_length	2025-06-28 21:06:49.818912+00
+18	auth	0010_alter_group_name_max_length	2025-06-28 21:06:49.83038+00
+19	auth	0011_update_proxy_permissions	2025-06-28 21:06:49.843484+00
+20	auth	0012_alter_user_first_name_max_length	2025-06-28 21:06:49.853214+00
+21	sessions	0001_initial	2025-06-28 21:06:49.868251+00
 \.
 
 
@@ -5206,7 +5215,7 @@ roqfot4gj4agqop4fzkwdsf7offy8p6e	.eJxVjEEOwiAQRe_C2pDCMLR16d4zEIYZbNVAUtqV8e7apA
 -- Name: News_news_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."News_news_id_seq"', 4663, true);
+SELECT pg_catalog.setval('public."News_news_id_seq"', 4672, true);
 
 
 --
