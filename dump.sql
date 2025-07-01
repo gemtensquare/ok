@@ -6012,6 +6012,8 @@ COPY public."News_news" (id, intro, title, url, image_url, source, image, type, 
 5827	অর্থবছরের শেষ দিনে রাজস্ব আহরণের সুবিধার্থে সোমবার (৩০ জুন) দেশের সব ব্যাংকে লেনদেন চলবে সন্ধ্যা ৬টা পর্যন্ত। বাংলাদেশ ব্যাংক এ ...	আজ ব্যাংকিং কার্যক্রম সন্ধ্যা ৬টা পর্যন্ত	https://www.jugantor.com/economics/972140	https://cdn.jugantor.com/assets/news_photos/2025/06/30/Untitled-1-686272257fbed.jpg	jugantor.com	news_images/1751326804_39240.jpg	bn	Economy	t	{"template1": "edited_images/1751326804_39240_template1.jpg"}	2025-06-30 23:40:04.014263+00	2025-06-30 23:44:02.820872+00
 5828	The suspect deliberately lit a fire to lure first responders to a mountainous area near Coeur d'Alene.	Idaho gunman in deadly ambush of fire crews had 'idolised' firefighters	https://www.bbc.com/news/articles/c15wwvggk80o	https://ichef.bbci.co.uk/news/999/cpsprodpb/011a/live/4c725c40-55da-11f0-9074-8989d8c97d87.jpg.webp	bbc.com	news_images/1751327685_39696.jpg	en	News	t	{"template1": "edited_images/1751327685_39696_template1.jpg"}	2025-06-30 23:54:45.487487+00	2025-06-30 23:56:03.184988+00
 5829	Two transgender officers say they fear their military careers are over due to Trump’s ban on trans service members.	Trans troops in US military 'in survival mode' as ban on serving kicks in	https://www.bbc.com/news/articles/cvgwwv3k5wxo	https://ichef.bbci.co.uk/news/999/cpsprodpb/ad89/live/224bad90-5341-11f0-b4be-8f7caf53b80c.jpg.webp	bbc.com	news_images/1751327685_83391.jpg	en	News	t	{"template1": "edited_images/1751327685_83391_template1.jpg"}	2025-06-30 23:54:45.752977+00	2025-06-30 23:56:04.445525+00
+5830	Jack Quaid recalls dad Dennis Quaid constantly playing 'Great Balls of Fire' on piano: 'Soundtrack to my childhood'	Jack Quaid recalls dad Dennis Quaid constantly playing 'Great Balls of Fire' on piano: 'Soundtrack to my childhood'	https://ew.com/jack-quaid-recalls-dad-dennis-quaid-constantly-playing-great-balls-of-fire-11764124	https://ew.com/thmb/jJssdDjQykkngyKD1s0PSlPFy1g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Jack-Quaid-Dennis-Quaid-090624-eb195e25c88d4ecabc38737752d8a89e.jpg	ew.com	news_images/1751332145_96226.jpg	en	Entertainment	t	{"template1": "edited_images/1751332145_96226_template1.jpg"}	2025-07-01 01:09:05.867737+00	2025-07-01 01:12:02.331256+00
+5831	James Gunn reacts to fans thinking he cast Adria Arjona as Wonder Woman: 'I didn't just follow her'	James Gunn reacts to fans thinking he cast Adria Arjona as Wonder Woman: 'I didn't just follow her'	https://ew.com/james-gunn-reacts-to-fans-thinking-he-cast-adria-arjona-as-wonder-woman-11764140	https://ew.com/thmb/y-zP81BrtrYruLjV5wQEYnutx1U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/James-Gunn-Adria-Arjona-12-063025-e3447261a0fb45bda8fce68542f53eb4.jpg	ew.com	news_images/1751333763_16204.jpg	en	Books	f	{}	2025-07-01 01:36:03.380028+00	2025-07-01 01:36:03.381625+00
 \.
 
 
@@ -6230,7 +6232,7 @@ roqfot4gj4agqop4fzkwdsf7offy8p6e	.eJxVjEEOwiAQRe_C2pDCMLR16d4zEIYZbNVAUtqV8e7apA
 -- Name: News_news_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."News_news_id_seq"', 5829, true);
+SELECT pg_catalog.setval('public."News_news_id_seq"', 5831, true);
 
 
 --
