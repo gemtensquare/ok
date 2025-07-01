@@ -6010,6 +6010,8 @@ COPY public."News_news" (id, intro, title, url, image_url, source, image, type, 
 5825	A project, "Community-Based NCD Management Capacity Strengthening in Mirzapur, Bangladesh (2025-2027)," officially commenced yesterday, said a press release.	Project to combat NCD launched	https://www.thedailystar.net//news/bangladesh/news/project-combat-ncd-launched-3929326	https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/images/2021/09/02/kumudini-hospital-2.jpg	thedailystar.net	news_images/1751325530_90511.jpg	en	Bangladesh	t	{"template1": "edited_images/1751325530_90511_template1.jpg"}	2025-06-30 23:18:50.374954+00	2025-06-30 23:20:12.1817+00
 5826		সাবেক ৭ মন্ত্রীসহ ২২ ভিআইপির মুক্তিযোদ্ধা সনদ তলব	https://www.bd-pratidin.com/national/2025/07/01/1131870	https://cdn.bd-pratidin.com/public/news_images/2025/07/01/1751324578-5cf6a7d64358257c0e06d518b2b793af.jpg	bd-pratidin.com	news_images/1751326604_37720.jpg	bn	National	t	{"template1": "edited_images/1751326604_37720_template1.jpg"}	2025-06-30 23:36:44.026857+00	2025-06-30 23:40:02.308544+00
 5827	অর্থবছরের শেষ দিনে রাজস্ব আহরণের সুবিধার্থে সোমবার (৩০ জুন) দেশের সব ব্যাংকে লেনদেন চলবে সন্ধ্যা ৬টা পর্যন্ত। বাংলাদেশ ব্যাংক এ ...	আজ ব্যাংকিং কার্যক্রম সন্ধ্যা ৬টা পর্যন্ত	https://www.jugantor.com/economics/972140	https://cdn.jugantor.com/assets/news_photos/2025/06/30/Untitled-1-686272257fbed.jpg	jugantor.com	news_images/1751326804_39240.jpg	bn	Economy	t	{"template1": "edited_images/1751326804_39240_template1.jpg"}	2025-06-30 23:40:04.014263+00	2025-06-30 23:44:02.820872+00
+5828	The suspect deliberately lit a fire to lure first responders to a mountainous area near Coeur d'Alene.	Idaho gunman in deadly ambush of fire crews had 'idolised' firefighters	https://www.bbc.com/news/articles/c15wwvggk80o	https://ichef.bbci.co.uk/news/999/cpsprodpb/011a/live/4c725c40-55da-11f0-9074-8989d8c97d87.jpg.webp	bbc.com	news_images/1751327685_39696.jpg	en	News	t	{"template1": "edited_images/1751327685_39696_template1.jpg"}	2025-06-30 23:54:45.487487+00	2025-06-30 23:56:03.184988+00
+5829	Two transgender officers say they fear their military careers are over due to Trump’s ban on trans service members.	Trans troops in US military 'in survival mode' as ban on serving kicks in	https://www.bbc.com/news/articles/cvgwwv3k5wxo	https://ichef.bbci.co.uk/news/999/cpsprodpb/ad89/live/224bad90-5341-11f0-b4be-8f7caf53b80c.jpg.webp	bbc.com	news_images/1751327685_83391.jpg	en	News	t	{"template1": "edited_images/1751327685_83391_template1.jpg"}	2025-06-30 23:54:45.752977+00	2025-06-30 23:56:04.445525+00
 \.
 
 
@@ -6228,7 +6230,7 @@ roqfot4gj4agqop4fzkwdsf7offy8p6e	.eJxVjEEOwiAQRe_C2pDCMLR16d4zEIYZbNVAUtqV8e7apA
 -- Name: News_news_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."News_news_id_seq"', 5827, true);
+SELECT pg_catalog.setval('public."News_news_id_seq"', 5829, true);
 
 
 --
